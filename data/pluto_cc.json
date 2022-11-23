@@ -1,0 +1,403 @@
+{
+    "id": "ccc",
+    "version": "v1",
+    "category": "live",
+    "input": {
+      "type": "schedule",
+      "socket_timeout": 3,
+      "reconnect_timeout": 300,
+      "streams": [
+        {
+          "adaptive_id": "1080p",
+          "variant": true,
+          "urls": [
+            "file:///usr/service/stg/solrtmp/file/default_1080p.mp4"
+          ]
+        }
+      ],
+      "subs": [
+        {
+          "name": "english",
+          "lang": "eng",
+          "default": true
+        }
+      ]
+    },
+    "schedule": {
+      "loop": true,
+      "sync_timeout": 2,
+      "range_start_by": "front",
+      "auto_adaptive_mapping": "media",
+      "list": [
+				{
+					"start_date": "20220520T11:00:00",
+					"id": "schid_1_1",
+					"ch_id": "cocos_program_B120214091_D1_1070478",
+					"range": {
+						"start": 0,
+						"end": 3000
+					}
+				},
+				{
+					"id": "schid_2_1",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 0,
+						"end": 380000
+					}
+				},
+				{
+					"id": "schid_ad_2_1",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_2_2",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 380000,
+						"end": 995000
+					}
+				},
+				{
+					"id": "schid_ad_2_2",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_2_3",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 995000,
+						"end": 1435000
+					}
+				},
+				{
+					"id": "schid_ad_2_3",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_2_4",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 1435000,
+						"end": 1820000
+					}
+				},
+				{
+					"id": "schid_ad_2_4",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_2_5",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 1820000,
+						"end": 2477000
+					}
+				},
+				{
+					"id": "schid_ad_2_5",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_2_6",
+					"ch_id": "cocos_program_B120214099_D1_995530",
+					"range": {
+						"start": 2477000,
+						"end": 3285000
+					}
+				},
+				{
+					"id": "schid_3_1",
+					"ch_id": "cocos_program_B120214091_D1_1070478",
+					"range": {
+						"start": 0,
+						"end": 3000
+					}
+				},
+				{
+					"id": "schid_4_1",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 0,
+						"end": 1116000
+					}
+				},
+				{
+					"id": "schid_ad_4_1",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_4_2",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 1116000,
+						"end": 1482000
+					}
+				},
+				{
+					"id": "schid_ad_4_2",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_4_3",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 1482000,
+						"end": 2324000
+					}
+				},
+				{
+					"id": "schid_ad_4_3",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_4_4",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 2324000,
+						"end": 2667000
+					}
+				},
+				{
+					"id": "schid_ad_4_4",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_4_5",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 2667000,
+						"end": 2936000
+					}
+				},
+				{
+					"id": "schid_ad_4_5",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_4_6",
+					"ch_id": "cocos_program_B120130408_D1_1107505",
+					"range": {
+						"start": 2936000,
+						"end": 3886000
+					}
+				},
+				{
+					"id": "schid_5_1",
+					"ch_id": "cocos_program_B120214091_D1_1070478",
+					"range": {
+						"start": 0,
+						"end": 3000
+					}
+				},
+				{
+					"id": "schid_6_1",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 0,
+						"end": 272000
+					}
+				},
+				{
+					"id": "schid_ad_6_1",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_6_2",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 272000,
+						"end": 1184000
+					}
+				},
+				{
+					"id": "schid_ad_6_2",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_6_3",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 1184000,
+						"end": 1840000
+					}
+				},
+				{
+					"id": "schid_ad_6_3",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_6_4",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 1840000,
+						"end": 2694000
+					}
+				},
+				{
+					"id": "schid_ad_6_4",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_6_5",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 2694000,
+						"end": 2913000
+					}
+				},
+				{
+					"id": "schid_ad_6_5",
+					"ch_id": "cocos_ad_60s_20210528_2mbps",
+					"range": {
+						"start": 0,
+						"end": 60000
+					}
+				},
+				{
+					"id": "schid_6_6",
+					"ch_id": "cocos_program_B120130408_D2_1107511",
+					"range": {
+						"start": 2913000,
+						"end": 3967000
+					}
+				}
+      ]
+    },
+    "output": {
+      "base_dir": "%r/%s",
+      "clear_when_finish": true,
+      "segment_opt": {
+        "playlist_chunk_count": 10,
+        "max_chunk_count": 30,
+        "duration_time": 6,
+        "align_by_src": true
+      },
+      "variant": {
+        "memory_caching": false,
+        "sort_order": "bandwidth",
+        "item": {
+          "codec": true,
+          "bandwidth": true,
+          "resolution": true,
+          "framerate": true,
+          "sar": false,
+          "samplerate": false,
+          "channel": false,
+          "lang": true
+        },
+        "output_path": [
+          {
+            "o_type": "gateway_m3u8",
+            "combine": "%f/playlist.m3u8"
+          },
+          {
+            "o_type": "mpd",
+            "combine": "%f/manifest.mpd"
+          }
+        ]
+      },
+      "hls": {
+        "ad_marker": "scte35all",
+        "subtitle": "cea708",
+	"dsiable_dtvcc_cea708": true,
+	"disable_dtvcc_cea608": false,
+        "memory_caching": false,
+        "start_sequence_num": 0,
+        "hls_version": 3,
+        "output_path": [
+          {
+            "o_type": "m3u8",
+            "combine": "%f/%a/chunklist.m3u8"
+          },
+          {
+            "o_type": "gateway_m3u8",
+            "combine": "%f/%a/playlist.m3u8"
+          },
+          {
+            "o_type": "ts_segment",
+            "combine": "%f/%a/segment_%n.ts"
+          }
+        ],
+        "cmaf": {
+          "enable": false,
+          "support_relay": false,
+          "chunk_interval": 500
+        },
+        "drm": {
+          "encryption_type": "none",
+          "key_info": [
+            {
+              "name": "key",
+              "value": "31323334353637383930616263646566"
+            }
+          ],
+          "ro_server": [
+            {
+              "ro_type": "normal",
+              "version": "1",
+              "url": "http://localhost:8080/test.key",
+              "provider": "SolBox Inc."
+            }
+          ]
+        }
+      }
+    }
+  }
+
