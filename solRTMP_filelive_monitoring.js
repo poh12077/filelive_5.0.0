@@ -993,10 +993,17 @@ let id_synchronizer = (id, conf) => {
 let channel_map = (schedule, log, conf) => {
     let mapping_table = {};
     let break_loop = 0;
+    let log_video_id='';
     for (let channel in log) {
+        for(let line=0; line < log[channel].length; line++){
+            if(log[channel][line].video_id !='ad'){
+                log_video_id= log[channel][line].video_id;
+                break;
+            }
+        }
         for (let excel_sheet = 0; excel_sheet < schedule.length; excel_sheet++) {
             for (let line = 0; line < schedule[excel_sheet].length; line++) {
-                if (id_synchronizer(log[channel][0].video_id, conf) == schedule[excel_sheet][line].id) {
+                if ( log_video_id == schedule[excel_sheet][line].id) {
                     mapping_table[excel_sheet] = channel;
                     break_loop = 1;
                     break;
@@ -1376,11 +1383,9 @@ let detect = (log, schedule, channel) => {
 }
 
 let main = () => {
-
-
     try {
-        // const conf = read_conf_samsung('config_samsung.conf');
-        const conf = read_conf_pluto('config_pluto.conf');
+        const conf = read_conf_samsung('config_samsung.conf');
+        // const conf = read_conf_pluto('config_pluto.conf');
         //  const conf = read_conf_pluto('configure.conf');
 
         // if( fs.existsSync('monitoring.log') ){
@@ -1395,9 +1400,10 @@ let main = () => {
 
         let schedule = [];
         module_excel(conf, schedule);
-        solrtmp_log_channel = channel_match(schedule, solrtmp_log, conf);
-        let detection_ouput= detect(solrtmp_log, schedule, solrtmp_log_channel);
+        pluto_log_channel = channel_match(schedule, solrtmp_log, conf);
+        let detection_ouput= detect(solrtmp_log, schedule, pluto_log_channel);
         console.log(detection_ouput.error);
+
     } catch (error) {
         console.log(error);
         process.exit(1);
