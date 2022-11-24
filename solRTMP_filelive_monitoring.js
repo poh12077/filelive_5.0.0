@@ -11,7 +11,7 @@ class video_info {
 }
 
 //time ='2012-05-17 10:20:30'
-let fetch_unix_timestamp = (time) => {
+let convertKST2UnixTimestamp = (time) => {
     try {
         return Math.floor(new Date(time).getTime());
     } catch (err) {
@@ -93,9 +93,9 @@ let read_conf_samsung = (file_name) => {
         conf.id_prefix.content = conf_file.id_prefix.content;
         conf.id_prefix.ad = conf_file.id_prefix.ad;
 
-        // conf.current_time = fetch_unix_timestamp(conf_file.current_time);
+        // conf.current_time = convertKST2UnixTimestamp(conf_file.current_time);
         for (let sheet in conf.start_date_samsung) {
-            conf.start_date_samsung[sheet] = fetch_unix_timestamp(conf.start_date_samsung[sheet]);
+            conf.start_date_samsung[sheet] = convertKST2UnixTimestamp(conf.start_date_samsung[sheet]);
         }
 
         conf.ad_duration.samsung_korea = conf_file.ad_duration.samsung_korea;
@@ -160,10 +160,10 @@ let read_conf_pluto = (file_name) => {
         conf.id_prefix.content = conf_file.id_prefix.content;
         conf.id_prefix.ad = conf_file.id_prefix.ad;
 
-        // conf.current_time = fetch_unix_timestamp(conf_file.current_time);
+        // conf.current_time = convertKST2UnixTimestamp(conf_file.current_time);
 
         for (let sheet in conf.start_date_pluto) {
-            conf.start_date_pluto[sheet] = fetch_unix_timestamp(conf.start_date_pluto[sheet]);
+            conf.start_date_pluto[sheet] = convertKST2UnixTimestamp(conf.start_date_pluto[sheet]);
         }
         conf.ad_duration.pluto = conf_file.ad_duration.pluto;
         conf.ad_name.pluto = conf_file.ad_name.pluto;
@@ -645,6 +645,7 @@ let parsePlutoLog = (conf) => {
         let index = full_log[i].indexOf('started');
         if (index != -1) {
             let time = full_log[i].substr(0, 19);
+            time = convertKST2UnixTimestamp(time);
             let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
             if (!(channel_list.includes(channel_id))) {
                 channel_list.push(channel_id);
@@ -654,12 +655,21 @@ let parsePlutoLog = (conf) => {
             let resolution = seq_and_id_and_resolution[1];
             let seq_and_id = seq_and_id_and_resolution[0];
             seq_and_id = seq_and_id.split('_');
-            let content_seq=seq_and_id[1];
-            let ad_seq = seq_and_id[2].charAt(0);
-            let video_id= seq_and_id[4]+"_"+seq_and_id[5]+"_"+seq_and_id[6];
-            solrtmp_log.push(full_log[i]);
 
-            log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+            if(seq_and_id[1]=='ad'){
+                let content_seq=seq_and_id[2];
+                let ad_seq = seq_and_id[3].charAt(0);
+                let video_id= seq_and_id[1];
+                solrtmp_log.push(full_log[i]);
+                log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+            }else{
+                let content_seq=seq_and_id[1];
+                let ad_seq = seq_and_id[2].charAt(0);
+                let video_id= seq_and_id[4]+"_"+seq_and_id[5]+"_"+seq_and_id[6];
+                solrtmp_log.push(full_log[i]);
+                log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+    
+            }
         }
     }
 
@@ -692,6 +702,7 @@ let parseSamsungLog = (conf) => {
         let index = full_log[i].indexOf('started');
         if (index != -1) {
             let time = full_log[i].substr(0, 19);
+            time = convertKST2UnixTimestamp(time);
             let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
             if (!(channel_list.includes(channel_id))) {
                 channel_list.push(channel_id);
@@ -701,12 +712,21 @@ let parseSamsungLog = (conf) => {
             let resolution = seq_and_id_and_resolution[1];
             let seq_and_id = seq_and_id_and_resolution[0];
             seq_and_id = seq_and_id.split('_');
-            let content_seq=seq_and_id[1];
-            let ad_seq = seq_and_id[2].charAt(0);
-            let video_id= seq_and_id[4]+"_"+seq_and_id[5];
-            solrtmp_log.push(full_log[i]);
 
-            log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+            if(seq_and_id[1]=='ad'){
+                let content_seq=seq_and_id[2];
+                let ad_seq = seq_and_id[3].charAt(0);
+                let video_id= seq_and_id[1];
+                solrtmp_log.push(full_log[i]);
+                log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+            }else{
+                let content_seq=seq_and_id[1];
+                let ad_seq = seq_and_id[2].charAt(0);
+                let video_id= seq_and_id[4]+"_"+seq_and_id[5];
+                solrtmp_log.push(full_log[i]);
+                log[channel_id].push(new line(time, video_id, content_seq,ad_seq, resolution));
+    
+            }
         }
     }
 
@@ -716,14 +736,15 @@ let parseSamsungLog = (conf) => {
     return log;
 }
 
-///current time = '2022-05-04 00:01:34'
+
+
 let id_finder_solrtmp_log_from_end = (log, conf, running_video, current_time) => {
     try {
         let noc_log;
         let debug_log;
         for (let channel in log) {
             //last line check
-            if (fetch_unix_timestamp(log[channel][log[channel].length - 1].time) <= current_time && current_time < fetch_unix_timestamp(log[channel][log[channel].length - 1].time) + 10000) {
+            if (convertKST2UnixTimestamp(log[channel][log[channel].length - 1].time) <= current_time && current_time < convertKST2UnixTimestamp(log[channel][log[channel].length - 1].time) + 10000) {
                 //console.log(channel, log[channel][log[channel].length - 1].video_id);
                 if (conf.option == 3) {
                     running_video.solrtmp_log.pluto[channel] = id_synchronizer(log[channel][log[channel].length - 1].video_id, conf);
@@ -738,12 +759,12 @@ let id_finder_solrtmp_log_from_end = (log, conf, running_video, current_time) =>
                 continue;
             }
             //first line check
-            else if (current_time < fetch_unix_timestamp(log[channel][0].time)) {
+            else if (current_time < convertKST2UnixTimestamp(log[channel][0].time)) {
                 // throw new Error('[error] current time is earlier than the start time of log');
             }
             //middle line check
             for (let line = log[channel].length - 2; 0 <= line; line--) {
-                if ((fetch_unix_timestamp(log[channel][line].time) <= current_time) && (current_time < fetch_unix_timestamp(log[channel][line + 1].time))) {
+                if ((convertKST2UnixTimestamp(log[channel][line].time) <= current_time) && (current_time < convertKST2UnixTimestamp(log[channel][line + 1].time))) {
                     // console.log(channel, log[channel][line].video_id);
                     if (conf.option == 3) {
                         running_video.solrtmp_log.pluto[channel] = id_synchronizer(log[channel][line].video_id, conf);
@@ -772,7 +793,7 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
         let debug_log;
         for (let channel in log) {
             //last line check
-            if (fetch_unix_timestamp(log[channel][log[channel].length - 1].time) == current_time) {
+            if (convertKST2UnixTimestamp(log[channel][log[channel].length - 1].time) == current_time) {
                 //console.log(channel, log[channel][log[channel].length - 1].video_id);
                 if (conf.option == 3) {
                     running_video.solrtmp_log.pluto[channel] = id_synchronizer(log[channel][log[channel].length - 1].video_id, conf);
@@ -783,12 +804,12 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
                 continue;
             }
             //first line check
-            else if (current_time < fetch_unix_timestamp(log[channel][0].time)) {
+            else if (current_time < convertKST2UnixTimestamp(log[channel][0].time)) {
                 throw new Error('[error] current time is earlier than the start time of log');
             }
             //middle line check
             for (let line = 0; line < log[channel].length - 1; line++) {
-                if ((fetch_unix_timestamp(log[channel][line].time) <= current_time) && (current_time < fetch_unix_timestamp(log[channel][line + 1].time))) {
+                if ((convertKST2UnixTimestamp(log[channel][line].time) <= current_time) && (current_time < convertKST2UnixTimestamp(log[channel][line + 1].time))) {
                     // console.log(channel, log[channel][line].video_id);
                     if (conf.option == 3) {
                         running_video.solrtmp_log.pluto[channel] = id_synchronizer(log[channel][line].video_id, conf);
@@ -799,7 +820,7 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
                     break;
                 }
             }
-            if (fetch_unix_timestamp(log[channel][log[channel].length - 1].time) < current_time) {
+            if (convertKST2UnixTimestamp(log[channel][log[channel].length - 1].time) < current_time) {
                 if (conf.option == 1 || conf.option == 2) {
                     if (channel in running_video.excel.samsung) {
                         //console.log(channel, log[channel][log[channel].length - 1].video_id, " done");
@@ -1013,10 +1034,10 @@ let current_time_finder_in_conf = (conf) => {
 
 let start_time_finder_in_log = (log) => {
     let start_time = 0;
-    //let start_time=fetch_unix_timestamp('2032-04-05 08:55:21');
+    //let start_time=convertKST2UnixTimestamp('2032-04-05 08:55:21');
     for (let channel in log) {
-        if (start_time < fetch_unix_timestamp(log[channel][0].time)) {
-            start_time = fetch_unix_timestamp(log[channel][0].time);
+        if (start_time < convertKST2UnixTimestamp(log[channel][0].time)) {
+            start_time = convertKST2UnixTimestamp(log[channel][0].time);
         }
     }
     return start_time;
@@ -1024,9 +1045,9 @@ let start_time_finder_in_log = (log) => {
 
 let end_time_finder_in_log = (log) => {
     let end_time = 0;
-    //let start_time=fetch_unix_timestamp('2032-04-05 08:55:21');
+    //let start_time=convertKST2UnixTimestamp('2032-04-05 08:55:21');
     for (let channel in log) {
-        end_time = fetch_unix_timestamp(log[channel][log[channel].length - 1].time);
+        end_time = convertKST2UnixTimestamp(log[channel][log[channel].length - 1].time);
     }
     return end_time;
 }
@@ -1169,7 +1190,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
             for (let channel in running_video.excel.pluto) {
                 if (running_video.excel.pluto[channel] === running_video.solrtmp_log.pluto[solrtmp_log_channel]) {
                     err_count[channel] = 0;
-                    if (fetch_unix_timestamp(running_video.excel.time) != fetch_unix_timestamp(running_video.solrtmp_log.time)) {
+                    if (convertKST2UnixTimestamp(running_video.excel.time) != convertKST2UnixTimestamp(running_video.solrtmp_log.time)) {
                         debug_log = new Date().toLocaleString() + ' ' + running_video.solrtmp_log.time.toLocaleString() + ' ' + solrtmp_log_channel + ' ' + running_video.excel.pluto[channel] + ' ' + running_video.solrtmp_log.pluto[solrtmp_log_channel] + ' ' + '[bug] time unsynchronization';
                         fs.appendFileSync('debug.log', debug_log + '\n\n');
                         continue;
@@ -1254,7 +1275,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
 //             for (let channel in running_video.excel.pluto) {
 //                 if (running_video.excel.pluto[channel] === running_video.solrtmp_log.pluto[solrtmp_log_channel]) {
 //                     err_count[channel] = 0;
-//                     if (fetch_unix_timestamp(running_video.excel.time) != fetch_unix_timestamp(running_video.solrtmp_log.time)) {
+//                     if (convertKST2UnixTimestamp(running_video.excel.time) != convertKST2UnixTimestamp(running_video.solrtmp_log.time)) {
 //                         debug_log = running_video.solrtmp_log.time + ' ' + solrtmp_log_channel + ' ' + running_video.excel.pluto[channel] + ' ' + running_video.solrtmp_log.pluto[solrtmp_log_channel] + ' ' + '[bug] time unsynchronization';
 //                         fs.appendFileSync('debug.log', debug_log + '\n');
 //                         continue;
@@ -1349,8 +1370,8 @@ let main = () => {
         //     fs.unlinkSync('monitoring.log'); 
         // }
 
-        // let solrtmp_log = monitorPluto( conf);
-        let solrtmp_log=monitorSamsungKorea(conf);
+        let solrtmp_log = monitorPluto( conf);
+        // let solrtmp_log=monitorSamsungKorea(conf);
 
         let schedule = [];
         module_excel( conf, schedule);
