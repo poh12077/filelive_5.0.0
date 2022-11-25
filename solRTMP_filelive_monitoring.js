@@ -125,7 +125,7 @@ let read_conf_samsung = (file_name) => {
 }
 
 
-let read_conf_pluto = (file_name) => {
+let readConfig = (file_name) => {
     try {
         let conf = fs.readFileSync(file_name, 'utf8');
         conf = JSON.parse(conf);
@@ -168,10 +168,13 @@ let read_conf_pluto = (file_name) => {
         for (let sheet in conf.start_date_pluto) {
             conf.start_date_pluto[sheet] = convertKST2UnixTimestamp(conf.start_date_pluto[sheet]);
         }
+        for (let sheet in conf.start_date_samsung) {
+            conf.start_date_samsung[sheet] = convertKST2UnixTimestamp(conf.start_date_samsung[sheet]);
+        }
 
-        if (conf.option < 1 || conf.option > 4 || conf.current_time <= 0 || conf.ad_duration.pluto <= 0
-            || conf.ad_name.pluto.length <= 0 || !Number.isInteger(conf.error_tolerance) || conf.period <= 0
-            || conf.id_prefix.content.length <= 0 || conf.id_prefix.ad.length <= 0) {
+
+        if (conf.option < 1 || conf.option > 4 || conf.ad_duration.pluto <= 0
+            || conf.ad_name.pluto.length <= 0 || !Number.isInteger(conf.error_tolerance) ) {
             throw new Error();
         }
 
@@ -1358,44 +1361,6 @@ let initialize_err_count = (log, schedule, conf, err_count) => {
     }
 }
 
-let detectSamsung = (log, schedule, channel) => {
-
-
-
-    let detection_ouput = {
-        error: "",
-        solrtmp_current_content_id: "",
-        excel_current_content_id: ""
-    }
-    let log_content_seq = log[channel][log[channel].length - 1].content_seq;
-    let log_ad_seq = log[channel][log[channel].length - 1].ad_seq;
-    let log_video_id = log[channel][log[channel].length - 1].video_id;
-    detection_ouput.solrtmp_current_content_id = log_video_id;
-    let log_start_time = log[channel][log[channel].length - 1].time;
-
-    let sheet = 0;
-    for (let content = 0; content < schedule[sheet].length; content++) {
-        let excel_content_seq = schedule[sheet][content].seq;
-        if (excel_content_seq == log_content_seq) {
-            let excel_start_time;
-            if (log_video_id == 'ad') {
-                excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 1].start;
-            } else {
-                if (log_content_seq == 1) {
-                    excel_start_time = schedule[sheet][content].start_time;
-                } else {
-                    excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 2].end;
-                }
-            }
-            detection_ouput.error = excel_start_time - log_start_time;
-            detection_ouput.excel_current_content_id = schedule[sheet][content].id;
-            break;
-        }
-    }
-
-    return detection_ouput;
-}
-
 let detectPluto = (log, schedule, conf) => {
     try {
         for (let channel in log) {
@@ -1442,6 +1407,56 @@ let detectPluto = (log, schedule, conf) => {
     }
 }
 
+let detectSamsung = (log, schedule, conf) => {
+    try {
+        let mapping_table = channel_map(schedule, log, conf);
+
+        for (let property in mapping_table) {
+            let channel = mapping_table[property];
+            let detection_ouput = {
+                serviceName: conf.serviceName, 
+                channelID:"",
+                resolution:"1080p",
+                result:"",
+                errorTime: "",
+                solrtmp_current_content_id: "",
+                excel_current_content_id: ""
+            }
+            let log_content_seq = log[channel][log[channel].length - 1].content_seq;
+            let log_ad_seq = log[channel][log[channel].length - 1].ad_seq;
+            let log_video_id = log[channel][log[channel].length - 1].video_id;
+            detection_ouput.solrtmp_current_content_id = log_video_id;
+            let log_start_time = log[channel][log[channel].length - 1].time;
+            detection_ouput.channelID = channel;
+
+            let sheet = parseInt(property);
+            for (let content = 0; content < schedule[sheet].length; content++) {
+                let excel_content_seq = schedule[sheet][content].seq;
+                if (excel_content_seq == log_content_seq) {
+                    let excel_start_time;
+                    if (log_video_id == 'ad') {
+                        excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 1].start;
+                    } else {
+                        if (log_content_seq == 1) {
+                            excel_start_time = schedule[sheet][content].start_time;
+                        } else {
+                            excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 2].end;
+                        }
+                    }
+                    detection_ouput.errorTime = excel_start_time - log_start_time;
+                    detection_ouput.excel_current_content_id = schedule[sheet][content].id;
+                    break;
+                }
+            }
+            //return detection_ouput;
+            determineResult(detection_ouput, conf);
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 let get=(detection_ouput, conf )=>{
     
     let url = conf.NOCDashboardURL;
@@ -1487,9 +1502,7 @@ let determineResult=(detection_ouput, conf)=>{
 
 let main = () => {
     try {
-        // const conf = read_conf_samsung('config_samsung.conf');
-        const conf = read_conf_pluto('config_pluto.conf');
-        //  const conf = read_conf_pluto('configure.conf');
+        const conf = readConfig('config.conf');
 
         // if( fs.existsSync('monitoring.log') ){
         //     fs.unlinkSync('monitoring.log'); 
@@ -1505,7 +1518,11 @@ let main = () => {
         module_excel(conf, schedule);
         // pluto_log_channel = channel_match(schedule, solrtmp_log, conf);
 
-        detectPluto(solrtmp_log, schedule, conf);
+        if (conf.option == 1 || conf.option == 2) {
+            detectSamsung(solrtmp_log, schedule, conf);
+        } else {
+            detectPluto(solrtmp_log, schedule, conf);
+        }
 
     } catch (error) {
         console.log(error);
