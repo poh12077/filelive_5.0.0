@@ -66,3 +66,220 @@ plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
 2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
 2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
 2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+2022. 11. 28. 오후 2:38:00 plutoTV 192.168.0.64 16ae5fb5_3043_4e9f_8d68_f360848e1c46 1080p -301828000 fail
+2022. 11. 28. 오후 2:39:45 plutoTV 192.168.0.64 16ae5fb5_3043_4e9f_8d68_f360848e1c46 1080p -301828000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+2022. 11. 28. 오후 2:42:17 plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+2022. 11. 28. 오후 4:01:59 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p 6000 fail
+2022. 11. 28. 오후 4:01:59 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p 6000 fail
+2022. 11. 28. 오후 4:01:59 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p 6000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')TypeError: Cannot read properties of undefined (reading 'charAt')2022. 11. 28. 오후 4:40:49 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 4:40:49 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 4:40:49 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+
+
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+2022. 11. 28. 오후 4:42:10 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+2022. 11. 28. 오후 4:42:10 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 4:42:10 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+2022. 11. 28. 오후 4:44:20 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 4:44:20 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 4:44:20 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+2022. 11. 28. 오후 4:48:39 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+2022. 11. 28. 오후 4:48:39 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 4:48:39 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+2022. 11. 28. 오후 4:49:23 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 4:49:23 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 4:49:23 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+2022. 11. 28. 오후 4:50:34 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 4:50:34 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 4:50:34 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+TypeError: Cannot read properties of undefined (reading 'charAt')
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+Error
+2022. 11. 28. 오후 5:21:26 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 5:21:26 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 5:21:26 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+Error: log parse error
+2022. 11. 28. 오후 5:23:11 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 5:23:11 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+2022. 11. 28. 오후 5:23:11 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+2022. 11. 28. 오후 5:23:22 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 5:23:22 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail
+2022. 11. 28. 오후 5:23:22 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+Error: log parse
+2022. 11. 28. 오후 5:24:02 plutoTV 192.168.0.64 2c56c2b9_aa3a_409e_a99b_37b01a746233 1080p -10000 fail
+2022. 11. 28. 오후 5:24:02 plutoTV 192.168.0.64 36ca3c09_5d0a_4e24_b5f7_5ea059c8788f 1080p -10000 fail
+2022. 11. 28. 오후 5:24:02 plutoTV 192.168.0.64 bbdee46a_9840_4977_8d77_c88658513144 1080p -10000 fail

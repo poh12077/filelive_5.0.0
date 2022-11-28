@@ -3,6 +3,7 @@ const xlsx = require("xlsx");
 const fs = require('graceful-fs');
 const axios = require('axios');
 const e = require("express");
+const { exceptions } = require("winston");
 
 
 class video_info {
@@ -174,7 +175,7 @@ let readConfig = (file_name) => {
 
 
         if (conf.option < 1 || conf.option > 4 || conf.ad_duration.pluto <= 0
-            || conf.ad_name.pluto.length <= 0 || !Number.isInteger(conf.error_tolerance) ) {
+            || conf.ad_name.pluto.length <= 0 || !Number.isInteger(conf.error_tolerance)) {
             throw new Error();
         }
 
@@ -625,7 +626,6 @@ let id_finder_excel = (schedule, conf, channel, running_video, current_time, exc
     }
 }
 
-//solrtmp_log == 'test_solrtmp_pluto.log'
 let parsePlutoLog = (conf) => {
     let file = fs.readFileSync(conf.log, 'utf8');
     let full_log = [];
@@ -645,31 +645,44 @@ let parsePlutoLog = (conf) => {
     let channel_list = [];
 
     for (let i = 0; i < full_log.length; i++) {
-        let index = full_log[i].indexOf('started');
-        if (index != -1) {
-            let time = full_log[i].substr(0, 19);
-            time = convertKST2UnixTimestamp(time);
-            let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
-            if (!(channel_list.includes(channel_id))) {
-                channel_list.push(channel_id);
-                log[channel_id] = [];
-            }
-            let seq_and_id_and_resolution = full_log[i].slice(full_log[i].indexOf('schid'), full_log[i].indexOf(') started')).split('/');
-            let resolution = seq_and_id_and_resolution[1];
-            let seq_and_id = seq_and_id_and_resolution[0];
-            seq_and_id = seq_and_id.split('_');
+        try {
+            let index = full_log[i].indexOf('started');
+            if (index != -1) {
+                let time = full_log[i].substr(0, 19);
+                time = convertKST2UnixTimestamp(time);
+                if( isNaN(time) ){
+                    throw new Error("log parse");
+                }
+                if( full_log[i].indexOf( '(id=' ) == -1){
+                    throw new Error("log parse");
+                }
+                let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
+                if (!(channel_list.includes(channel_id))) {
+                    channel_list.push(channel_id);
+                    log[channel_id] = [];
+                }
+                if(full_log[i].indexOf('schid') == -1 || full_log[i].indexOf( ') started' ) == -1 ){
+                    throw new Error("log parse");
+                }
+                let seq_and_id_and_resolution = full_log[i].slice(full_log[i].indexOf('schid'), full_log[i].indexOf(') started')).split('/');
+                let resolution = seq_and_id_and_resolution[1];
+                let seq_and_id = seq_and_id_and_resolution[0];
+                seq_and_id = seq_and_id.split('_');
 
-            if (seq_and_id[1] == 'ad') {
-                let content_seq = seq_and_id[2];
-                let ad_seq = seq_and_id[3].charAt(0);
-                let video_id = seq_and_id[1];
-                log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
-            } else {
-                let content_seq = seq_and_id[1];
-                let ad_seq = seq_and_id[2].charAt(0);
-                let video_id = seq_and_id[4] + "_" + seq_and_id[5] + "_" + seq_and_id[6];
-                log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
+                if (seq_and_id[1] == 'ad') {
+                    let content_seq = seq_and_id[2];
+                    let ad_seq = seq_and_id[3].charAt(0);
+                    let video_id = seq_and_id[1];
+                    log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
+                } else {
+                    let content_seq = seq_and_id[1];
+                    let ad_seq = seq_and_id[2].charAt(0);
+                    let video_id = seq_and_id[4] + "_" + seq_and_id[5] + "_" + seq_and_id[6];
+                    log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
+                }
             }
+        } catch (error) {
+            fs.appendFileSync('debug.log', error.toString()+"\n");
         }
     }
     return log;
@@ -1349,10 +1362,10 @@ let detectPluto = (log, schedule, conf) => {
     try {
         for (let channel in log) {
             let detection_ouput = {
-                serviceName: conf.serviceName, 
-                channelID:"",
-                resolution:"1080p",
-                result:"",
+                serviceName: conf.serviceName,
+                channelID: "",
+                resolution: "1080p",
+                result: "",
                 errorTime: "",
                 solrtmp_current_content_id: "",
                 excel_current_content_id: ""
@@ -1398,10 +1411,10 @@ let detectSamsung = (log, schedule, conf) => {
         for (let property in mapping_table) {
             let channel = mapping_table[property];
             let detection_ouput = {
-                serviceName: conf.serviceName, 
-                channelID:"",
-                resolution:"1080p",
-                result:"",
+                serviceName: conf.serviceName,
+                channelID: "",
+                resolution: "1080p",
+                result: "",
                 errorTime: "",
                 solrtmp_current_content_id: "",
                 excel_current_content_id: ""
@@ -1441,8 +1454,8 @@ let detectSamsung = (log, schedule, conf) => {
 }
 
 
-let get=(detection_ouput, conf )=>{
-    
+let get = (detection_ouput, conf) => {
+
     let url = conf.NOCDashboardURL;
     let serviceName = conf.serviceName;
     let channelID = detection_ouput.channelID;
@@ -1453,36 +1466,36 @@ let get=(detection_ouput, conf )=>{
 
     axios.get(url, {
         params: {
-          serviceName: serviceName,
-          channelID : channelID,
-          resolution: resolution,
-          result : result,
-          errorTime : errorTime,
-          serverIP : serverIP
+            serviceName: serviceName,
+            channelID: channelID,
+            resolution: resolution,
+            result: result,
+            errorTime: errorTime,
+            serverIP: serverIP
         }
-      })
-      .then(function (response) {
-        fs.appendFileSync('debug.log',new Date().toLocaleString()+' '+serviceName+' '+serverIP+' '+channelID+' '+resolution+' '+errorTime+' '+result+'\n' );
-        console.log(response);
-      })
-      .catch(function (error) {
-        fs.appendFileSync('debug.log',new Date().toLocaleString()+' '+serviceName+' '+serverIP+' '+channelID+' '+resolution+' '+errorTime+' '+result+' '+'nana\n' );
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });  
-     
+    })
+        .then(function (response) {
+            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + serviceName + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result + '\n');
+            console.log(response);
+        })
+        .catch(function (error) {
+            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + serviceName + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result + ' ' + 'nana\n');
+            console.log(error);
+        })
+        .finally(function () {
+            // always executed
+        });
+
 }
 
-let determineResult=(detection_ouput, conf)=>{
+let determineResult = (detection_ouput, conf) => {
     let errorTime = Math.abs(detection_ouput.errorTime);
     let error_tolerance = conf.error_tolerance;
 
-    if( error_tolerance < errorTime  ){
+    if (error_tolerance < errorTime) {
         detection_ouput.result = 'fail';
         get(detection_ouput, conf);
-    }else{
+    } else {
         detection_ouput.result = 'success';
         get(detection_ouput, conf);
     }
