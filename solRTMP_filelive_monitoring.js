@@ -631,7 +631,6 @@ let parsePlutoLog = (conf) => {
     let full_log = [];
     full_log = file.split('\n');
     let log = {}
-    let solrtmp_log = [];
 
     class line {
         constructor(time, video_id, content_seq, ad_seq, resolution) {
@@ -664,21 +663,14 @@ let parsePlutoLog = (conf) => {
                 let content_seq = seq_and_id[2];
                 let ad_seq = seq_and_id[3].charAt(0);
                 let video_id = seq_and_id[1];
-                solrtmp_log.push(full_log[i]);
                 log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
             } else {
                 let content_seq = seq_and_id[1];
                 let ad_seq = seq_and_id[2].charAt(0);
                 let video_id = seq_and_id[4] + "_" + seq_and_id[5] + "_" + seq_and_id[6];
-                solrtmp_log.push(full_log[i]);
                 log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
-
             }
         }
-    }
-
-    for (let i = solrtmp_log.length - 1 - 2; i < solrtmp_log.length; i++) {
-        fs.appendFileSync('debug.log', solrtmp_log[i] + '\n');
     }
     return log;
 }
@@ -688,7 +680,6 @@ let parseSamsungLog = (conf) => {
     let full_log = [];
     full_log = file.split('\n');
     let log = {}
-    let solrtmp_log = [];
 
     class line {
         constructor(time, video_id, content_seq, ad_seq, resolution) {
@@ -721,21 +712,14 @@ let parseSamsungLog = (conf) => {
                 let content_seq = seq_and_id[2];
                 let ad_seq = seq_and_id[3].charAt(0);
                 let video_id = seq_and_id[1];
-                solrtmp_log.push(full_log[i]);
                 log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
             } else {
                 let content_seq = seq_and_id[1];
                 let ad_seq = seq_and_id[2].charAt(0);
                 let video_id = seq_and_id[4] + "_" + seq_and_id[5];
-                solrtmp_log.push(full_log[i]);
                 log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
-
             }
         }
-    }
-
-    for (let i = solrtmp_log.length - 1 - 2; i < solrtmp_log.length; i++) {
-        fs.appendFileSync('debug.log', solrtmp_log[i] + '\n');
     }
     return log;
 }
@@ -1465,20 +1449,24 @@ let get=(detection_ouput, conf )=>{
     let resolution = detection_ouput.resolution;
     let result = detection_ouput.result;
     let errorTime = detection_ouput.errorTime;
-    
+    let serverIP = conf.serverIP;
+
     axios.get(url, {
         params: {
           serviceName: serviceName,
           channelID : channelID,
           resolution: resolution,
           result : result,
-          errorTime : errorTime
+          errorTime : errorTime,
+          serverIP : serverIP
         }
       })
       .then(function (response) {
+        fs.appendFileSync('debug.log',new Date().toLocaleString()+' '+serviceName+' '+serverIP+' '+channelID+' '+resolution+' '+errorTime+' '+result+'\n' );
         console.log(response);
       })
       .catch(function (error) {
+        fs.appendFileSync('debug.log',new Date().toLocaleString()+' '+serviceName+' '+serverIP+' '+channelID+' '+resolution+' '+errorTime+' '+result+' '+'nana\n' );
         console.log(error);
       })
       .finally(function () {

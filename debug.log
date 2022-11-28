@@ -1,466 +1,68 @@
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 cocos_ad_60s_20210528_2mbps play=00:01:29.000/00:02:00.000
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 Different id
-
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:30 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 cocos_ad_60s_20210528_2mbps play=00:01:19.000/00:02:00.000
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:30 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:42.221/00:10:03.000 Different id
-
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:20 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 cocos_ad_60s_20210528_2mbps play=00:01:09.000/00:02:00.000
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:20 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:31.213/00:10:03.000 Different id
-
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:10 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 cocos_ad_60s_20210528_2mbps play=00:00:59.000/00:02:00.000
-2022. 11. 22. 오후 6:32:38 2022. 4. 5. 오전 12:46:10 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:20.184/00:10:03.000 Different id
-
-Different id over 3
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120120500_D2_1083270 play=00:06:20.000/00:19:08.000
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 Different id
-
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:30 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120120500_D2_1083270 play=00:06:10.000/00:19:08.000
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:30 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:42.221/00:10:03.000 Different id
-
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:20 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120120500_D2_1083270 play=00:06:00.000/00:19:08.000
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:20 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:31.213/00:10:03.000 Different id
-
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:10 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120120500_D2_1083270 play=00:05:50.000/00:19:08.000
-2022. 11. 23. 오전 11:31:46 2022. 4. 5. 오전 12:46:10 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:20.184/00:10:03.000 Different id
-
-Different id over 3
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:39:45 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:05:52.000/00:10:54.000
-2022. 11. 23. 오전 11:39:45 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 fail
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:40:46 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:05:52.000/00:10:54.000
-2022. 11. 23. 오전 11:40:46 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 fail
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:47:53 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:58.000/00:10:03.000
-2022. 11. 23. 오전 11:47:53 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:49:04 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:03:03.000/00:10:03.000
-2022. 11. 23. 오전 11:49:04 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오전 11:49:23 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.000/00:10:03.000
-2022. 11. 23. 오전 11:49:23 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오후 1:20:14 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.000/00:10:03.000
-2022. 11. 23. 오후 1:20:14 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오후 1:21:55 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.000/00:10:03.000
-2022. 11. 23. 오후 1:21:55 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022. 11. 23. 오후 1:22:10 2022. 4. 5. 오전 12:46:40 [excel]       2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.000/00:10:03.000
-2022. 11. 23. 오후 1:22:12 2022. 4. 5. 오전 12:46:40 [solRTMP_log] 2c56c2b9_aa3a_409e_a99b_37b01a746233 B120214099_D1_1065330 play=00:02:53.186/00:10:03.000 success
-
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:36 trace media/stream.cpp 2021 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.186/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:37 trace media/stream.cpp 2021 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:53.997/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:46:40 trace media/stream.cpp 2021 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): current schedule (main:schid_136_4-cocos_program_B120214099_D1_1065330/1080p) play=00:02:56.941/00:10:03.000, adlap=00:00:00.000/00:00:00.000
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/720p): schedule(schid_10_9->cocos_program_B120200191_D10/720p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/480p): schedule(schid_10_9->cocos_program_B120200191_D10/480p) started
-2022-04-05 08:56:19 info media/stream.cpp 3623 stream(id=afb160a1_1669_46f6_aba5_e55f48c7b2ca/1080p): schedule(schid_10_9->cocos_program_B120200191_D10/1080p) started
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
 2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
 2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
 2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
 2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
 2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=bbdee46a_9840_4977_8d77_c88658513144/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 00:43:41 info media/stream.cpp 3636 stream(id=36ca3c09_5d0a_4e24_b5f7_5ea059c8788f/1080p): schedule(schid_136_4->cocos_program_B120214099_D1_1065330/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/720p): schedule(schid_13_2->cocos_program_B120211171_D13/720p) started
-2022-04-05 16:00:57 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/480p): schedule(schid_13_2->cocos_program_B120211171_D13/480p) started
-2022-04-05 16:01:01 info media/stream.cpp 3623 stream(id=956f45fb_1285_428e_8da3_ce8c04579058/1080p): schedule(schid_13_2->cocos_program_B120211171_D13/1080p) started
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
+plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 54ac8e25_eb5a_4f10_ba20_ffb254f0a16c 1080p 6000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 151248c2_45a2_45a5_a31f_bb9fc72969dd 1080p -337803000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 2e874342_9a2c_48e9_9066_7ab3a3284a80 1080p -2000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 e91c6419_2e45_4f6c_a646_b912658d73b8 1080p 4000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 23a98766_04e3_4a66_9467_aa8b36e32a7d 1080p -4856000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 eaa13423_ab8c_4fde_9fc7_5268a971ff22 1080p -32457000 fail
+2022. 11. 28. 오후 12:03:28 plutoTV 192.168.0.64 f9d55b7b_6be1_465e_9451_05ebac892aed 1080p -47657000 fail
