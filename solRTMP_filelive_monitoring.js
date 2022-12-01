@@ -2,8 +2,6 @@ const xlsx = require("xlsx");
 //const fs = require('fs');
 const fs = require('graceful-fs');
 const axios = require('axios');
-const e = require("express");
-const { exceptions } = require("winston");
 
 
 class video_info {
@@ -300,21 +298,21 @@ let parser_excel_for_timetable = (json, conf, sheet, excel) => {
 
         let sheet_num = 'sheet_' + sheet.toString();
         let end_time;
-        if (conf.option == 1 || conf.option == 2) { end_time = conf.start_date_samsung[sheet_num] };
-        if (conf.option == 3 || conf.option == 4) { end_time = conf.start_date_pluto[sheet_num] };
+        if (conf.option == 1 ) { end_time = conf.start_date_samsung[sheet_num] };
+        if (conf.option ==2 || conf.option == 3 || conf.option == 4) { end_time = conf.start_date_pluto[sheet_num] };
 
         let ad_list = [];
         let ad_list_date = [];
 
         let m;
-        if (conf.option == 1 || conf.option == 2) { m = conf.start_date_samsung[sheet_num] };
-        if (conf.option == 3 || conf.option == 4) { m = conf.start_date_pluto[sheet_num] };
+        if (conf.option == 1 ) { m = conf.start_date_samsung[sheet_num] };
+        if (conf.option == 3 || conf.option == 4 || conf.option == 2) { m = conf.start_date_pluto[sheet_num] };
 
         for (let i = 0; i < json.length; i++) {
             if (json[i].id !== undefined) {
                 end_time += json[i]['__EMPTY'];
                 //advertisement pluto
-                if (conf.option == 3 || conf.option == 4) {
+                if ( conf.option ==2 || conf.option == 3 || conf.option == 4) {
                     for (let k = 1; k < 6; k++) {
                         if (json[i]['Ad Point ' + k.toString()] != undefined) {
                             let ad = {
@@ -338,7 +336,7 @@ let parser_excel_for_timetable = (json, conf, sheet, excel) => {
                     }
                 }
                 //advertisement samsung 
-                else if (conf.option == 1 || conf.option == 2) {
+                else if (conf.option == 1 ) {
                     //north america
                     if (excel.SheetNames[sheet] === 'north america') {
                         for (let k = 1; k > 0; k++) {
@@ -626,7 +624,7 @@ let id_finder_excel = (schedule, conf, channel, running_video, current_time, exc
     }
 }
 
-let parsePlutoLog = (conf) => {
+let parseLog = (conf) => {
     let file = fs.readFileSync(conf.log, 'utf8');
     let full_log = [];
     full_log = file.split('\n');
@@ -634,6 +632,9 @@ let parsePlutoLog = (conf) => {
 
     class line {
         constructor(time, video_id, content_seq, ad_seq, resolution) {
+            if( typeof time !== 'number' || typeof video_id !== 'string' || typeof content_seq !== 'string' || typeof ad_seq !== 'string' || typeof resolution !== 'string'){
+                throw new Error("log parse");
+            }
             this.time = time;
             this.video_id = video_id;
             this.content_seq = content_seq;
@@ -665,10 +666,15 @@ let parsePlutoLog = (conf) => {
                     throw new Error("log parse");
                 }
                 let seq_and_id_and_resolution = full_log[i].slice(full_log[i].indexOf('schid'), full_log[i].indexOf(') started')).split('/');
+                if(seq_and_id_and_resolution[1]===undefined){
+                    throw new Error("log parse");
+                }
                 let resolution = seq_and_id_and_resolution[1];
                 let seq_and_id = seq_and_id_and_resolution[0];
                 seq_and_id = seq_and_id.split('_');
-
+                if(seq_and_id[4]===undefined || seq_and_id[5]===undefined || seq_and_id[6]===undefined){
+                    throw new Error('log parse');
+                }
                 if (seq_and_id[1] == 'ad') {
                     let content_seq = seq_and_id[2];
                     let ad_seq = seq_and_id[3].charAt(0);
@@ -682,7 +688,7 @@ let parsePlutoLog = (conf) => {
                 }
             }
         } catch (error) {
-            fs.appendFileSync('debug.log', error.toString()+"\n");
+           // fs.appendFileSync('debug.log', error.toString()+"\n");
         }
     }
     return log;
@@ -1074,7 +1080,7 @@ let time_decrement = (current_time, period) => {
 
 let monitorPluto = (conf) => {
     try {
-        let solrtmp_log = parsePlutoLog(conf);
+        let solrtmp_log = parseLog(conf);
         //solrtmp_log_write(log, './workspace/test.log');
 
         return solrtmp_log;
@@ -1385,7 +1391,7 @@ let detectPluto = (log, schedule, conf) => {
                     if (log_video_id == 'ad') {
                         excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 1].start;
                     } else {
-                        if (log_content_seq == 1) {
+                        if (log_ad_seq == 1) {
                             excel_start_time = schedule[sheet][content].start_time;
                         } else {
                             excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 2].end;
@@ -1434,7 +1440,7 @@ let detectSamsung = (log, schedule, conf) => {
                     if (log_video_id == 'ad') {
                         excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 1].start;
                     } else {
-                        if (log_content_seq == 1) {
+                        if (log_ad_seq == 1) {
                             excel_start_time = schedule[sheet][content].start_time;
                         } else {
                             excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 2].end;
@@ -1508,11 +1514,12 @@ let main = () => {
         // if( fs.existsSync('monitoring.log') ){
         //     fs.unlinkSync('monitoring.log'); 
         // }
+
         let solrtmp_log;
         if (conf.option == 1 || conf.option == 2) {
             solrtmp_log = parseSamsungLog(conf);
         } else {
-            solrtmp_log = parsePlutoLog(conf);
+            solrtmp_log = parseLog(conf);
         }
 
         let schedule = [];
@@ -1532,5 +1539,7 @@ let main = () => {
 }
 
 main();
+
+setInterval(main, 1000);
 
 

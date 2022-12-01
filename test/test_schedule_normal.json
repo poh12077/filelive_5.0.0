@@ -1,0 +1,332 @@
+{
+        "id": "2c56c2b9_aa3a_409e_a99b_37b01a746233",
+        "version": "v1",
+        "category": "live",
+        "input": {
+            "type": "schedule",
+            "socket_timeout": 3,
+            "reconnect_timeout": 300,
+            "streams": [
+                {
+                    "adaptive_id": "1080p",
+                    "variant": true,
+                    "urls": [
+                        "file:///usr/service/stg/solrtmp/file/default_1080p.mp4"
+                    ]
+                },
+                {
+                    "adaptive_id": "720p",
+                    "variant": true,
+                    "urls": [
+                        "file:///usr/service/stg/solrtmp/file/default_720p.mp4"
+                    ]
+                },
+                {
+                    "adaptive_id": "480p",
+                    "variant": true,
+                    "urls": [
+                        "file:///usr/service/stg/solrtmp/file/default_480p.mp4"
+                    ]
+                },
+                {
+                    "adaptive_id": "360p",
+                    "variant": true,
+                    "urls": [
+                        "file:///usr/service/stg/solrtmp/file/default_360p.mp4"
+                    ]
+                },
+                {
+                    "adaptive_id": "240p",
+                    "variant": true,
+                    "urls": [
+                        "file:///usr/service/stg/solrtmp/file/default_240p.mp4"
+                    ]
+                }
+            ],
+            "subs": [
+                {
+                    "name": "english",
+                    "lang": "eng",
+                    "default": true
+                }
+            ]
+        },
+        "schedule": {
+            "loop": true,
+            "sync_timeout": 2,
+            "range_start_by": "front",
+            "auto_adaptive_mapping": "media",
+            "list": [
+                {
+                    "start_date": "20221130T17:14:00",
+                    "id": "schid_1_1",
+                    "ch_id": "cocos_program_B120214091_D1_1070478",
+                    "range": {
+                        "start": 0,
+                        "end": 3083
+                    }
+                },
+                {
+                    "id": "schid_2_1",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 0,
+                        "end": 1181982
+                    }
+                },
+                {
+                    "id": "schid_ad_2_1",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_2_2",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 1181982,
+                        "end": 2653987
+                    }
+                },
+                {
+                    "id": "schid_ad_2_2",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_2_3",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 2653987,
+                        "end": 4700968
+                    }
+                },
+                {
+                    "id": "schid_ad_2_3",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_2_4",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 4700968,
+                        "end": 6101969
+                    }
+                },
+                {
+                    "id": "schid_ad_2_4",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_2_5",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 6101969,
+                        "end": 7824992
+                    }
+                },
+                {
+                    "id": "schid_ad_2_5",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_2_6",
+                    "ch_id": "cocos_program_B120111027_D1_1319746",
+                    "range": {
+                        "start": 7824992,
+                        "end": 9764731
+                    }
+                },
+                {
+                    "id": "schid_3_1",
+                    "ch_id": "cocos_program_B120214091_D1_1070478",
+                    "range": {
+                        "start": 0,
+                        "end": 3083
+                    }
+                },
+                {
+                    "id": "schid_4_1",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 0,
+                        "end": 431999
+                    }
+                },
+                {
+                    "id": "schid_ad_4_1",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_4_2",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 431999,
+                        "end": 844978
+                    }
+                },
+                {
+                    "id": "schid_ad_4_2",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_4_3",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 844978,
+                        "end": 1251985
+                    }
+                },
+                {
+                    "id": "schid_ad_4_3",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_4_4",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 1251985,
+                        "end": 1852986
+                    }
+                },
+                {
+                    "id": "schid_ad_4_4",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_4_5",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 1852986,
+                        "end": 2289990
+                    }
+                },
+                {
+                    "id": "schid_ad_4_5",
+                    "ch_id": "cocos_ad_120s_us",
+                    "range": {
+                        "start": 0,
+                        "end": 120000
+                    }
+                },
+                {
+                    "id": "schid_4_6",
+                    "ch_id": "cocos_program_B120041702_D732_1022841",
+                    "range": {
+                        "start": 2289990,
+                        "end": 3138205
+                    }
+                }
+            ]
+        },
+        "output": {
+            "base_dir": "%r/%s",
+            "clear_when_finish": true,
+            "segment_opt": {
+                "playlist_chunk_count": 10,
+                "max_chunk_count": 30,
+                "duration_time": 6,
+                "align_by_src": true
+            },
+            "variant": {
+                "memory_caching": false,
+                "sort_order": "bandwidth",
+                "item": {
+                    "codec": true,
+                    "bandwidth": true,
+                    "resolution": true,
+                    "framerate": true,
+                    "sar": false,
+                    "samplerate": false,
+                    "channel": false,
+                    "lang": true
+                },
+                "output_path": [
+                    {
+                        "o_type": "gateway_m3u8",
+                        "combine": "%f/playlist.m3u8"
+                    },
+                    {
+                        "o_type": "mpd",
+                        "combine": "%f/manifest.mpd"
+                    }
+                ]
+            },
+            "hls": {
+                "ad_marker": "scte35all",
+                "subtitle": "cea708",
+                "memory_caching": false,
+                "start_sequence_num": 0,
+                "hls_version": 3,
+                "output_path": [
+                    {
+                        "o_type": "m3u8",
+                        "combine": "%f/%a/chunklist.m3u8"
+                    },
+                    {
+                        "o_type": "gateway_m3u8",
+                        "combine": "%f/%a/playlist.m3u8"
+                    },
+                    {
+                        "o_type": "ts_segment",
+                        "combine": "%f/%a/segment_%n.ts"
+                    }
+                ],
+                "cmaf": {
+                    "enable": false,
+                    "support_relay": false,
+                    "chunk_interval": 500
+                },
+                "drm": {
+                    "encryption_type": "none",
+                    "key_info": [
+                        {
+                            "name": "key",
+                            "value": "31323334353637383930616263646566"
+                        }
+                    ],
+                    "ro_server": [
+                        {
+                            "ro_type": "normal",
+                            "version": "1",
+                            "url": "http://localhost:8080/test.key",
+                            "provider": "SolBox Inc."
+                        }
+                    ]
+                }
+            }
+        }
+}
