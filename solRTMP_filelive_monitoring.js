@@ -1368,11 +1368,11 @@ let detectPluto = (log, schedule, conf) => {
     try {
         for (let channel in log) {
             let detection_ouput = {
-                serviceName: conf.serviceName,
+                service: conf.service,
                 channelID: "",
                 resolution: "1080p",
                 result: "",
-                errorTime: "",
+                errorTime: 0,
                 solrtmp_current_content_id: "",
                 excel_current_content_id: ""
             }
@@ -1417,7 +1417,7 @@ let detectSamsung = (log, schedule, conf) => {
         for (let property in mapping_table) {
             let channel = mapping_table[property];
             let detection_ouput = {
-                serviceName: conf.serviceName,
+                service: conf.service,
                 channelID: "",
                 resolution: "1080p",
                 result: "",
@@ -1463,16 +1463,18 @@ let detectSamsung = (log, schedule, conf) => {
 let get = (detection_ouput, conf) => {
 
     let url = conf.NOCDashboardURL;
-    let serviceName = conf.serviceName;
+    let service = conf.service;
     let channelID = detection_ouput.channelID;
     let resolution = detection_ouput.resolution;
     let result = detection_ouput.result;
     let errorTime = detection_ouput.errorTime;
     let serverIP = conf.serverIP;
+    let excel_current_content_id = detection_ouput.excel_current_content_id;
+    let solrtmp_current_content_id = detection_ouput.solrtmp_current_content_id;
 
     axios.get(url, {
         params: {
-            serviceName: serviceName,
+            service: service,
             channelID: channelID,
             resolution: resolution,
             result: result,
@@ -1481,11 +1483,11 @@ let get = (detection_ouput, conf) => {
         }
     })
         .then(function (response) {
-            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + serviceName + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result + '\n');
+            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + service + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result +' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n');
             console.log(response);
         })
         .catch(function (error) {
-            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + serviceName + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result + ' ' + 'nana\n');
+            fs.appendFileSync('debug.log', new Date().toLocaleString() + ' ' + service + ' ' + serverIP + ' ' + channelID + ' ' + resolution + ' ' + errorTime + ' ' + result + ' ' +excel_current_content_id+' '+solrtmp_current_content_id + 'nana\n');
             console.log(error);
         })
         .finally(function () {
@@ -1494,16 +1496,68 @@ let get = (detection_ouput, conf) => {
 
 }
 
+
+let post = (detection_ouput, conf) => {
+
+    let url = conf.NOCDashboardURL;
+    let service = conf.service;
+    let vol = detection_ouput.channelID;
+    let resolution = detection_ouput.resolution;
+    let status = detection_ouput.result;
+    let errorTime = detection_ouput.errorTime;
+    let host_name = conf.host_name;
+    let excel_current_content_id = detection_ouput.excel_current_content_id;
+    let solrtmp_current_content_id = detection_ouput.solrtmp_current_content_id;
+    let telco = conf.telco;
+    let type = conf.type;
+    let server_type = conf.server_type;
+
+    let messageBody = {
+        telco: telco,
+        service: service,
+        vol: vol,
+        server_type : server_type,
+        status: status,
+        errorTime: errorTime,
+        host_name: host_name,
+        stream_name: resolution,
+        type : type
+    }
+    
+    let headers ={
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+    let debugLog = new Date().toLocaleString()+' '+telco+' '+service+' '+' '+server_type+' '+host_name+' '+vol+' '+resolution+' '+errorTime+' '+status+' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n';
+    axios.post(url, messageBody, headers)
+        .then(function (response) {
+            fs.appendFileSync('debug.log', debugLog );
+            console.log(response);
+        })
+        .catch(function (error) {
+            fs.appendFileSync('debug.log', "reatAPI fail\n" );
+            console.log(error);
+        })
+        .finally(function () {
+            // always executed
+        });
+
+}
+
+
+
 let determineResult = (detection_ouput, conf) => {
     let errorTime = Math.abs(detection_ouput.errorTime);
     let error_tolerance = conf.error_tolerance;
+    let errorMessage = 'fail '+ detection_ouput.errorTime.toString();
 
     if (error_tolerance < errorTime) {
-        detection_ouput.result = 'fail';
-        get(detection_ouput, conf);
+        detection_ouput.result = errorMessage;
+        post(detection_ouput, conf);
     } else {
-        detection_ouput.result = 'success';
-        get(detection_ouput, conf);
+        detection_ouput.result = 'OK';
+        post(detection_ouput, conf);
     }
 }
 
@@ -1540,6 +1594,6 @@ let main = () => {
 
 main();
 
-setInterval(main, 1000);
+setInterval(main, 10000);
 
 

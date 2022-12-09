@@ -1,0 +1,686 @@
+2022-12-01 11:05:27 info main.cpp 305 start mode=daemon, main_pid=86266, service_pid=86267
+2022-12-01 11:05:27 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/1/4, queue=20), bev=0
+2022-12-01 11:05:27 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:05:27 info svr/svr.cpp 413 solRTMP(id=poh1207-168): ready
+2022-12-01 11:05:27 info svr/svr.cpp 671 server(rtmp): opened, listening port=1935
+2022-12-01 11:05:27 info svr/svr.cpp 671 server(http): opened, listening port=80
+2022-12-01 11:05:27 info svr/svr.cpp 671 server(stcp): opened, listening port=5123
+2022-12-01 11:05:27 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/720p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120111027/1319746/B120111027_1319746_g60_t34.mp4, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.720p
+2022-12-01 11:05:27 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/1080p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120111027/1319746/B120111027_1319746_g60_t35.mp4, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.1080p
+2022-12-01 11:05:27 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/480p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120111027/1319746/B120111027_1319746_g60_t33.mp4, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.480p
+2022-12-01 11:05:27 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/360p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120111027/1319746/B120111027_1319746_g60_t32.mp4, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.360p
+2022-12-01 11:05:29 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/240p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120111027/1319746/B120111027_1319746_g60_t31.mp4, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.240p
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120214091_D1_1070478/1080p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214091/1070478/B120214091_1070478_g60_t35.mp4, /var/tmp/solrtmp/cache/cocos_program_B120214091_D1_1070478.1080p
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120111027_D1_1319746/english): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/CAPTION/B120111027/535519dc-29f2-42ff-a761-298cb8009fea.srt, /var/tmp/solrtmp/cache/cocos_program_B120111027_D1_1319746.english
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120214091_D1_1070478/480p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214091/1070478/B120214091_1070478_g60_t33.mp4, /var/tmp/solrtmp/cache/cocos_program_B120214091_D1_1070478.480p
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120214091_D1_1070478/720p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214091/1070478/B120214091_1070478_g60_t34.mp4, /var/tmp/solrtmp/cache/cocos_program_B120214091_D1_1070478.720p
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120214091_D1_1070478/240p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214091/1070478/B120214091_1070478_g60_t31.mp4, /var/tmp/solrtmp/cache/cocos_program_B120214091_D1_1070478.240p
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120214091_D1_1070478/360p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214091/1070478/B120214091_1070478_g60_t32.mp4, /var/tmp/solrtmp/cache/cocos_program_B120214091_D1_1070478.360p
+2022-12-01 11:05:30 info media/stream.cpp 1274 stream(id=cocos_program_B120214091_D1_1070478/1080p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (high profile, level=40), 1920 x 1080, duration=00:00:03.136
+2022-12-01 11:05:30 info media/stream.cpp 1274 stream(id=cocos_program_B120214091_D1_1070478/720p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 1280 x 720, duration=00:00:03.136
+2022-12-01 11:05:30 info media/stream.cpp 1274 stream(id=cocos_program_B120214091_D1_1070478/480p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 864 x 482, duration=00:00:03.136
+2022-12-01 11:05:30 info media/stream.cpp 1274 stream(id=cocos_program_B120214091_D1_1070478/360p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=30), 640 x 360, duration=00:00:03.136
+2022-12-01 11:05:30 info media/stream.cpp 1274 stream(id=cocos_program_B120214091_D1_1070478/240p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=20), 480 x 270, duration=00:00:03.136
+2022-12-01 11:05:30 trace cms/download.cpp 428 stream(id=cocos_program_B120041702_D732_1022841/1080p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214099/1022841/B120214099_1022841_g60_t35.mp4, /var/tmp/solrtmp/cache/cocos_program_B120041702_D732_1022841.1080p
+2022-12-01 11:05:31 trace cms/download.cpp 428 stream(id=cocos_program_B120041702_D732_1022841/720p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214099/1022841/B120214099_1022841_g60_t34.mp4, /var/tmp/solrtmp/cache/cocos_program_B120041702_D732_1022841.720p
+2022-12-01 11:05:32 trace cms/download.cpp 428 stream(id=cocos_program_B120041702_D732_1022841/480p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214099/1022841/B120214099_1022841_g60_t33.mp4, /var/tmp/solrtmp/cache/cocos_program_B120041702_D732_1022841.480p
+2022-12-01 11:05:32 trace cms/download.cpp 428 stream(id=cocos_program_B120041702_D732_1022841/360p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214099/1022841/B120214099_1022841_g60_t32.mp4, /var/tmp/solrtmp/cache/cocos_program_B120041702_D732_1022841.360p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): no updated detected from file:///usr/service/stg/solrtmp/file/default_1080p.mp4, /var/tmp/solrtmp/cache/2c56c2b9_aa3a_409e_a99b_37b01a746233.1080p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=cocos_program_B120041702_D732_1022841/240p): no updated detected from http://Y2pjb2Nvc3N0Z0BjamVubXN0b3I6MjU1MmM1MjVhOWRkMTUzNTcwNjFiZTIzMTcyMzRlNjU=@cjcocosstg.x-cdn.com/dav/CLIP/COCOS/SST/B120214099/1022841/B120214099_1022841_g60_t31.mp4, /var/tmp/solrtmp/cache/cocos_program_B120041702_D732_1022841.240p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): no updated detected from file:///usr/service/stg/solrtmp/file/default_720p.mp4, /var/tmp/solrtmp/cache/2c56c2b9_aa3a_409e_a99b_37b01a746233.720p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): no updated detected from file:///usr/service/stg/solrtmp/file/default_480p.mp4, /var/tmp/solrtmp/cache/2c56c2b9_aa3a_409e_a99b_37b01a746233.480p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): no updated detected from file:///usr/service/stg/solrtmp/file/default_360p.mp4, /var/tmp/solrtmp/cache/2c56c2b9_aa3a_409e_a99b_37b01a746233.360p
+2022-12-01 11:05:33 trace cms/download.cpp 428 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): no updated detected from file:///usr/service/stg/solrtmp/file/default_240p.mp4, /var/tmp/solrtmp/cache/2c56c2b9_aa3a_409e_a99b_37b01a746233.240p
+2022-12-01 11:05:33 info media/stream.cpp 1274 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (high profile, level=40), 1920 x 1080,SUB, duration=00:00:01.067
+2022-12-01 11:05:33 info media/stream.cpp 1274 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 1280 x 720,SUB, duration=00:00:01.067
+2022-12-01 11:05:33 info media/stream.cpp 1274 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=30), 864 x 480,SUB, duration=00:00:01.067
+2022-12-01 11:05:33 info media/stream.cpp 1274 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=30), 640 x 360,SUB, duration=00:00:01.045
+2022-12-01 11:05:33 info media/stream.cpp 1274 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=21), 480 x 270,SUB, duration=00:00:01.045
+2022-12-01 11:05:34 info media/stream.cpp 1274 stream(id=cocos_program_B120041702_D732_1022841/1080p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (high profile, level=40), 1920 x 1080, duration=00:52:18.304
+2022-12-01 11:05:34 info media/stream.cpp 1274 stream(id=cocos_program_B120041702_D732_1022841/720p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 1280 x 720, duration=00:52:18.304
+2022-12-01 11:05:34 info media/stream.cpp 1274 stream(id=cocos_program_B120041702_D732_1022841/480p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 864 x 482, duration=00:52:18.304
+2022-12-01 11:05:34 info media/stream.cpp 1274 stream(id=cocos_program_B120041702_D732_1022841/360p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=30), 640 x 360, duration=00:52:18.282
+2022-12-01 11:05:34 info media/stream.cpp 1274 stream(id=cocos_program_B120041702_D732_1022841/240p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=20), 480 x 270, duration=00:52:18.282
+2022-12-01 11:05:36 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/1080p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (high profile, level=40), 1920 x 1080, duration=02:42:44.831
+2022-12-01 11:05:36 info media/stream.cpp 3868 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): prepared(base sec=1669860336)
+2022-12-01 11:05:36 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=0.000(sys=0.000, diff=0.000), sm=absolute bw=328kbps(v=55:3568:3568, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:36 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (self:none-self/1080p) play=00:00:00.000/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:36 info media/stream.cpp 3868 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): prepared(base sec=1669860336)
+2022-12-01 11:05:36 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=0.000(sys=0.000, diff=0.000), sm=absolute bw=256kbps(v=51:3568:3568, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:36 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (self:none-self/720p) play=00:00:00.000/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:36 info media/stream.cpp 3868 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): prepared(base sec=1669860336)
+2022-12-01 11:05:36 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=0.000(sys=0.000, diff=0.000), sm=absolute bw=193kbps(v=56:3568:3568, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:36 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (self:none-self/480p) play=00:00:00.000/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:36 info media/stream.cpp 3868 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): prepared(base sec=1669860336)
+2022-12-01 11:05:36 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=0.000(sys=0.000, diff=0.000), sm=absolute bw=171kbps(v=75:3568:3568, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:36 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (self:none-self/360p) play=00:00:00.000/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:36 info media/stream.cpp 3868 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): prepared(base sec=1669860336)
+2022-12-01 11:05:36 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=0.000(sys=0.000, diff=0.000), sm=absolute bw=118kbps(v=54:3568:3568, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:36 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (self:none-self/240p) play=00:00:00.000/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:36 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/720p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 1280 x 720, duration=02:42:44.831
+2022-12-01 11:05:37 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(1/4/4, queue=0), bev=0
+2022-12-01 11:05:37 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:05:37 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/480p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (main profile, level=31), 864 x 480, duration=02:42:44.831
+2022-12-01 11:05:37 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/360p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=30), 640 x 360, duration=02:42:44.800
+2022-12-01 11:05:38 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/240p): media info(initial)=audio AAC-LC 48000Hz 2ch, video AVC (baseline profile, level=20), 480 x 270, duration=02:42:44.800
+2022-12-01 11:05:38 info media/stream.cpp 1274 stream(id=cocos_program_B120111027_D1_1319746/english): media info(initial)=SUB, duration=02:42:44.800
+2022-12-01 11:05:47 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=10.993(sys=10.993, diff=-0.000), sm=absolute bw=328kbps(v=55:992905:992905, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:47 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (self:none-self/1080p) play=00:00:00.405/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:47 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=10.993(sys=10.993, diff=-0.000), sm=absolute bw=256kbps(v=51:992905:992905, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:47 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (self:none-self/720p) play=00:00:00.405/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:47 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=10.993(sys=10.993, diff=-0.000), sm=absolute bw=193kbps(v=56:992905:992905, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:47 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (self:none-self/480p) play=00:00:00.405/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:47 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=10.993(sys=10.993, diff=-0.000), sm=absolute bw=171kbps(v=75:992905:992905, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:47 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (self:none-self/360p) play=00:00:00.500/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:47 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=10.993(sys=10.993, diff=-0.000), sm=absolute bw=118kbps(v=54:992905:992905, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:47 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (self:none-self/240p) play=00:00:00.500/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:47 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/4/4, queue=0), bev=0
+2022-12-01 11:05:47 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:05:57 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/4/4, queue=0), bev=0
+2022-12-01 11:05:57 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:05:58 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=21.964(sys=21.964, diff=0.000), sm=absolute bw=328kbps(v=55:1980288:1980288, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:58 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (self:none-self/1080p) play=00:00:01.024/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:58 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=21.964(sys=21.964, diff=0.000), sm=absolute bw=256kbps(v=51:1980288:1980288, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:58 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (self:none-self/720p) play=00:00:01.024/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:58 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=21.964(sys=21.964, diff=0.000), sm=absolute bw=193kbps(v=56:1980288:1980288, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:58 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (self:none-self/480p) play=00:00:01.024/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:58 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=21.964(sys=21.964, diff=0.000), sm=absolute bw=171kbps(v=75:1980288:1980288, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:58 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (self:none-self/360p) play=00:00:01.024/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:05:58 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=21.964(sys=21.964, diff=0.000), sm=absolute bw=118kbps(v=54:1980288:1980288, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:05:58 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (self:none-self/240p) play=00:00:01.024/00:00:01.045, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:00 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120214091_D1_1070478/1080p)
+2022-12-01 11:06:00 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_1_1->cocos_program_B120214091_D1_1070478/1080p) started
+2022-12-01 11:06:00 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_1_1) started (SCH_TRACE)
+2022-12-01 11:06:00 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120214091_D1_1070478/720p)
+2022-12-01 11:06:00 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_1_1->cocos_program_B120214091_D1_1070478/720p) started
+2022-12-01 11:06:00 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_1_1) started (SCH_TRACE)
+2022-12-01 11:06:00 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120214091_D1_1070478/480p)
+2022-12-01 11:06:00 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_1_1->cocos_program_B120214091_D1_1070478/480p) started
+2022-12-01 11:06:00 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_1_1) started (SCH_TRACE)
+2022-12-01 11:06:00 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120214091_D1_1070478/360p)
+2022-12-01 11:06:00 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_1_1->cocos_program_B120214091_D1_1070478/360p) started
+2022-12-01 11:06:00 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_1_1) started (SCH_TRACE)
+2022-12-01 11:06:00 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120214091_D1_1070478/240p)
+2022-12-01 11:06:00 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_1_1->cocos_program_B120214091_D1_1070478/240p) started
+2022-12-01 11:06:00 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_1_1) started (SCH_TRACE)
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/360p/hls): discontinuity is happened at audio track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/240p/hls): discontinuity is happened at video track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/240p/hls): discontinuity is happened at audio track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p/hls): discontinuity is happened at video track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/720p/hls): discontinuity is happened at video track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/480p/hls): discontinuity is happened at video track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p/hls): discontinuity is happened at audio track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/720p/hls): discontinuity is happened at audio track
+2022-12-01 11:06:00 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/480p/hls): discontinuity is happened at audio track
+2022-12-01 11:06:03 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:06:03 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_1_1) stopped
+2022-12-01 11:06:03 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_1->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:06:03 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_1) started (SCH_TRACE)
+2022-12-01 11:06:04 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:06:04 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_1_1) stopped
+2022-12-01 11:06:04 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_1->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:06:04 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_1) started (SCH_TRACE)
+2022-12-01 11:06:04 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:06:04 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_1_1) stopped
+2022-12-01 11:06:04 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_1->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:06:04 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_1) started (SCH_TRACE)
+2022-12-01 11:06:04 trace media/mux/sts.cpp 770 muxer(2c56c2b9_aa3a_409e_a99b_37b01a746233/480p/hls): discontinuity is happened at video track
+2022-12-01 11:06:05 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:06:05 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_1_1) stopped
+2022-12-01 11:06:05 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_1->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:06:05 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_1) started (SCH_TRACE)
+2022-12-01 11:06:05 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:06:05 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_1_1) stopped
+2022-12-01 11:06:05 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_1->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:06:05 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_1) started (SCH_TRACE)
+2022-12-01 11:06:07 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/4/4, queue=0), bev=0
+2022-12-01 11:06:07 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:06:09 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=32.987(sys=32.987, diff=0.000), sm=absolute bw=328kbps(v=55:2972421:2972421, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:09 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/1080p) play=00:00:05.802/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:09 trace media/stream.cpp 4597 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): now schedule verification for (schid_2_1)  [time_table=00:00:06.027] vs. [current=00:00:05.802], jitter=0.224 sec(SCH_TRACE)
+2022-12-01 11:06:09 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=32.987(sys=32.987, diff=0.000), sm=absolute bw=256kbps(v=51:2972421:2972421, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:09 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/720p) play=00:00:05.824/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:09 trace media/stream.cpp 4597 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): now schedule verification for (schid_2_1)  [time_table=00:00:06.027] vs. [current=00:00:05.824], jitter=0.203 sec(SCH_TRACE)
+2022-12-01 11:06:09 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=32.987(sys=32.987, diff=0.000), sm=absolute bw=193kbps(v=56:2972421:2972421, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:09 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/480p) play=00:00:05.802/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:09 trace media/stream.cpp 4597 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): now schedule verification for (schid_2_1)  [time_table=00:00:06.027] vs. [current=00:00:05.802], jitter=0.225 sec(SCH_TRACE)
+2022-12-01 11:06:09 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=32.987(sys=32.987, diff=0.000), sm=absolute bw=171kbps(v=75:2972421:2972421, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:09 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/360p) play=00:00:05.994/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:09 trace media/stream.cpp 4597 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): now schedule verification for (schid_2_1)  [time_table=00:00:06.027] vs. [current=00:00:05.994], jitter=0.033 sec(SCH_TRACE)
+2022-12-01 11:06:09 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=32.987(sys=32.987, diff=0.000), sm=absolute bw=118kbps(v=54:2972421:2972421, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:09 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/240p) play=00:00:05.994/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:09 trace media/stream.cpp 4597 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): now schedule verification for (schid_2_1)  [time_table=00:00:06.027] vs. [current=00:00:05.994], jitter=0.033 sec(SCH_TRACE)
+2022-12-01 11:06:17 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/4/4, queue=0), bev=0
+2022-12-01 11:06:17 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:06:20 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=43.985(sys=43.985, diff=-0.000), sm=absolute bw=328kbps(v=55:3962175:3962175, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:20 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/1080p) play=00:00:16.810/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:20 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=43.985(sys=43.985, diff=-0.000), sm=absolute bw=256kbps(v=51:3962175:3962175, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:20 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/720p) play=00:00:16.810/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:20 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=43.985(sys=43.985, diff=-0.000), sm=absolute bw=193kbps(v=56:3962175:3962175, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:20 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/480p) play=00:00:16.810/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:20 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=43.985(sys=43.985, diff=-0.000), sm=absolute bw=171kbps(v=75:3962175:3962175, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:20 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/360p) play=00:00:16.983/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:20 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=43.985(sys=43.985, diff=-0.000), sm=absolute bw=118kbps(v=54:3962175:3962175, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:20 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_1-cocos_program_B120111027_D1_1319746/240p) play=00:00:16.983/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:22 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_2_1) error(8)
+2022-12-01 11:06:23 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:06:23 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_1) stopped
+2022-12-01 11:06:23 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_2->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:06:23 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_2) started (SCH_TRACE)
+2022-12-01 11:06:23 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_2_1) error(8)
+2022-12-01 11:06:24 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:06:24 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_1) stopped
+2022-12-01 11:06:24 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_2->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:06:24 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_2) started (SCH_TRACE)
+2022-12-01 11:06:24 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_2_1) error(8)
+2022-12-01 11:06:24 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:06:24 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_1) stopped
+2022-12-01 11:06:24 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_2->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:06:24 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_2) started (SCH_TRACE)
+2022-12-01 11:06:24 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_2_1) error(8)
+2022-12-01 11:06:25 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:06:25 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_1) stopped
+2022-12-01 11:06:25 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_2->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:06:25 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_2) started (SCH_TRACE)
+2022-12-01 11:06:25 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_2_1) error(8)
+2022-12-01 11:06:25 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:06:25 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_1) stopped
+2022-12-01 11:06:25 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_2->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:06:25 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_2) started (SCH_TRACE)
+2022-12-01 11:06:27 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/4/4, queue=0), bev=0
+2022-12-01 11:06:27 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:06:31 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=54.980(sys=54.980, diff=0.000), sm=absolute bw=328kbps(v=55:4951791:4951791, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:31 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/1080p) play=00:00:07.882/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:31 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=54.980(sys=54.980, diff=0.000), sm=absolute bw=256kbps(v=51:4951791:4951791, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:31 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/720p) play=00:00:07.840/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:31 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=54.980(sys=54.980, diff=0.000), sm=absolute bw=193kbps(v=56:4951791:4951791, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:31 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/480p) play=00:00:07.818/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:31 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=54.980(sys=54.980, diff=0.000), sm=absolute bw=171kbps(v=75:4951791:4951791, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:31 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/360p) play=00:00:08.010/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:31 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=54.980(sys=54.980, diff=0.000), sm=absolute bw=118kbps(v=54:4951791:4951791, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:31 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/240p) play=00:00:08.010/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:37 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/1/4, queue=0), bev=0
+2022-12-01 11:06:37 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:06:42 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=65.972(sys=65.972, diff=-0.000), sm=absolute bw=328kbps(v=55:5941032:5941032, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:42 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/1080p) play=00:00:18.805/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:42 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=65.972(sys=65.972, diff=-0.000), sm=absolute bw=256kbps(v=51:5941032:5941032, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:42 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/720p) play=00:00:18.805/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:42 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=65.972(sys=65.972, diff=-0.000), sm=absolute bw=193kbps(v=56:5941032:5941032, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:42 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/480p) play=00:00:18.805/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:42 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=65.972(sys=65.972, diff=-0.000), sm=absolute bw=171kbps(v=75:5941032:5941032, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:42 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/360p) play=00:00:19.005/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:42 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=65.972(sys=65.972, diff=-0.000), sm=absolute bw=118kbps(v=54:5941032:5941032, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:42 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_2-cocos_program_B120111027_D1_1319746/240p) play=00:00:19.005/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:43 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_2_2) error(8)
+2022-12-01 11:06:43 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:06:43 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_2) stopped
+2022-12-01 11:06:43 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_3->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:06:43 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_3) started (SCH_TRACE)
+2022-12-01 11:06:43 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_2_2) error(8)
+2022-12-01 11:06:44 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:06:44 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_2) stopped
+2022-12-01 11:06:44 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_3->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:06:44 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_3) started (SCH_TRACE)
+2022-12-01 11:06:44 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_2_2) error(8)
+2022-12-01 11:06:44 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:06:44 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_2) stopped
+2022-12-01 11:06:44 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_3->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:06:44 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_3) started (SCH_TRACE)
+2022-12-01 11:06:44 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_2_2) error(8)
+2022-12-01 11:06:45 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:06:45 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_2) stopped
+2022-12-01 11:06:45 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_3->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:06:45 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_3) started (SCH_TRACE)
+2022-12-01 11:06:45 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_2_2) error(8)
+2022-12-01 11:06:45 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:06:45 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_2) stopped
+2022-12-01 11:06:45 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_3->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:06:45 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_3) started (SCH_TRACE)
+2022-12-01 11:06:47 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:06:47 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:06:53 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=76.969(sys=76.969, diff=0.000), sm=absolute bw=328kbps(v=55:6930804:6930804, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:53 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_3-cocos_program_B120111027_D1_1319746/1080p) play=00:00:09.877/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:53 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=76.969(sys=76.969, diff=0.000), sm=absolute bw=256kbps(v=51:6930804:6930804, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:53 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_3-cocos_program_B120111027_D1_1319746/720p) play=00:00:09.877/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:53 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=76.969(sys=76.969, diff=0.000), sm=absolute bw=193kbps(v=56:6930804:6930804, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:53 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_3-cocos_program_B120111027_D1_1319746/480p) play=00:00:09.877/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:53 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=76.969(sys=76.969, diff=0.000), sm=absolute bw=171kbps(v=75:6930804:6930804, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:53 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_3-cocos_program_B120111027_D1_1319746/360p) play=00:00:10.026/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:53 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=76.969(sys=76.969, diff=0.000), sm=absolute bw=118kbps(v=54:6930804:6930804, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:06:53 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_3-cocos_program_B120111027_D1_1319746/240p) play=00:00:10.026/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:06:57 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:06:57 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_2_3) error(8)
+2022-12-01 11:07:03 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:07:03 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_3) stopped
+2022-12-01 11:07:03 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_4->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:07:03 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_4) started (SCH_TRACE)
+2022-12-01 11:07:03 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_2_3) error(8)
+2022-12-01 11:07:03 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:07:03 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_3) stopped
+2022-12-01 11:07:03 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_4->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:07:03 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_4) started (SCH_TRACE)
+2022-12-01 11:07:03 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_2_3) error(8)
+2022-12-01 11:07:04 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:07:04 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_3) stopped
+2022-12-01 11:07:04 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_4->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:07:04 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_4) started (SCH_TRACE)
+2022-12-01 11:07:04 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_2_3) error(8)
+2022-12-01 11:07:05 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:07:05 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_3) stopped
+2022-12-01 11:07:05 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_4->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:07:05 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_4) started (SCH_TRACE)
+2022-12-01 11:07:05 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_2_3) error(8)
+2022-12-01 11:07:05 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:07:05 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_3) stopped
+2022-12-01 11:07:05 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_4->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:07:05 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_4) started (SCH_TRACE)
+2022-12-01 11:07:05 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=89.557(sys=89.557, diff=0.000), sm=absolute bw=328kbps(v=55:8063666:8063666, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:05 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/1080p) play=00:00:00.373/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:05 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=89.557(sys=89.557, diff=0.000), sm=absolute bw=256kbps(v=51:8063666:8063666, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:05 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/720p) play=00:00:00.827/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:05 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=89.557(sys=89.557, diff=0.000), sm=absolute bw=193kbps(v=56:8063666:8063666, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:05 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/480p) play=00:00:00.827/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:05 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=89.557(sys=89.557, diff=0.000), sm=absolute bw=171kbps(v=75:8063666:8063666, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:05 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/360p) play=00:00:00.437/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:05 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=89.557(sys=89.557, diff=0.000), sm=absolute bw=118kbps(v=54:8063666:8063666, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:05 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/240p) play=00:00:00.437/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:07 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:07 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[[distant birds chirping]]
+2022-12-01 11:07:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[[distant birds chirping]]
+2022-12-01 11:07:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[[distant birds chirping]]
+2022-12-01 11:07:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[[distant birds chirping]]
+2022-12-01 11:07:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[[distant birds chirping]]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[(1978)]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[(1978)]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[(1978)]
+2022-12-01 11:07:08 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:09 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[(1978)]
+2022-12-01 11:07:09 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[(1978)]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[[engine revving]]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[[engine revving]]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[[engine revving]]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[[engine revving]]
+2022-12-01 11:07:10 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[[engine revving]]
+2022-12-01 11:07:15 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:15 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:15 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:15 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:15 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:16 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=99.977(sys=99.977, diff=0.000), sm=absolute bw=328kbps(v=55:9001488:9001488, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:16 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/1080p) play=00:00:12.960/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:16 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=99.977(sys=99.977, diff=0.000), sm=absolute bw=256kbps(v=51:9001488:9001488, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:16 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/720p) play=00:00:12.938/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:16 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=99.977(sys=99.977, diff=0.000), sm=absolute bw=193kbps(v=56:9001488:9001488, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:16 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/480p) play=00:00:12.896/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:16 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=99.977(sys=99.977, diff=0.000), sm=absolute bw=171kbps(v=75:9001488:9001488, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:16 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/360p) play=00:00:13.109/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:16 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=99.977(sys=99.977, diff=0.000), sm=absolute bw=118kbps(v=54:9001488:9001488, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:16 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_4-cocos_program_B120111027_D1_1319746/240p) play=00:00:13.109/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:17 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:17 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:19 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[(Samdeok Prayer House)]
+2022-12-01 11:07:19 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[(Samdeok Prayer House)]
+2022-12-01 11:07:19 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[(Samdeok Prayer House)]
+2022-12-01 11:07:19 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[(Samdeok Prayer House)]
+2022-12-01 11:07:19 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[(Samdeok Prayer House)]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[[pastor] Satan is…]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[[pastor] Satan is…]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[[pastor] Satan is…]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[[pastor] Satan is…]
+2022-12-01 11:07:21 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[[pastor] Satan is…]
+2022-12-01 11:07:22 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_2_4) error(8)
+2022-12-01 11:07:23 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:07:23 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_4) stopped
+2022-12-01 11:07:23 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_5->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:07:23 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_5) started (SCH_TRACE)
+2022-12-01 11:07:23 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_2_4) error(8)
+2022-12-01 11:07:23 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:07:23 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_4) stopped
+2022-12-01 11:07:23 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_5->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:07:23 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_5) started (SCH_TRACE)
+2022-12-01 11:07:23 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_2_4) error(8)
+2022-12-01 11:07:24 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:07:24 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_4) stopped
+2022-12-01 11:07:24 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_5->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:07:24 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_5) started (SCH_TRACE)
+2022-12-01 11:07:24 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[Not far, but always nearby.]
+2022-12-01 11:07:24 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[Not far, but always nearby.]
+2022-12-01 11:07:24 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[Not far, but always nearby.]
+2022-12-01 11:07:24 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_2_4) error(8)
+2022-12-01 11:07:25 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:07:25 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_4) stopped
+2022-12-01 11:07:25 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_5->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:07:25 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_5) started (SCH_TRACE)
+2022-12-01 11:07:25 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_2_4) error(8)
+2022-12-01 11:07:25 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:07:25 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_4) stopped
+2022-12-01 11:07:25 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_5->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:07:25 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_5) started (SCH_TRACE)
+2022-12-01 11:07:25 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[Not far, but always nearby.]
+2022-12-01 11:07:25 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[Not far, but always nearby.]
+2022-12-01 11:07:27 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=110.964(sys=110.964, diff=0.000), sm=absolute bw=328kbps(v=55:9990363:9990363, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:27 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/1080p) play=00:00:04.032/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:27 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=110.964(sys=110.964, diff=0.000), sm=absolute bw=256kbps(v=51:9990363:9990363, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:27 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/720p) play=00:00:04.032/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:27 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=110.964(sys=110.964, diff=0.000), sm=absolute bw=193kbps(v=56:9990363:9990363, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:27 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/480p) play=00:00:04.032/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:27 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=110.964(sys=110.964, diff=0.000), sm=absolute bw=171kbps(v=75:9990363:9990363, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:27 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/360p) play=00:00:04.160/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:27 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=110.964(sys=110.964, diff=0.000), sm=absolute bw=118kbps(v=54:9990363:9990363, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:27 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/240p) play=00:00:04.160/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:27 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:27 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:27 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:27 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:27 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:27 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:27 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:29 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[He will sweet-talk you
+into the eternal abyss of evil!]
+2022-12-01 11:07:29 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[He will sweet-talk you
+into the eternal abyss of evil!]
+2022-12-01 11:07:29 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[He will sweet-talk you
+into the eternal abyss of evil!]
+2022-12-01 11:07:29 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[He will sweet-talk you
+into the eternal abyss of evil!]
+2022-12-01 11:07:29 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[He will sweet-talk you
+into the eternal abyss of evil!]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[- [pastor] Always beware.
+- See that Detective Chun?]
+2022-12-01 11:07:35 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[- [pastor] Always beware.
+- See that Detective Chun?]
+2022-12-01 11:07:36 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[- [pastor] Always beware.
+- See that Detective Chun?]
+2022-12-01 11:07:36 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[- [pastor] Always beware.
+- See that Detective Chun?]
+2022-12-01 11:07:36 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[- [pastor] Always beware.
+- See that Detective Chun?]
+2022-12-01 11:07:37 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:37 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:38 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=121.972(sys=121.972, diff=0.000), sm=absolute bw=328kbps(v=55:10981081:10981081, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:38 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/1080p) play=00:00:14.976/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:38 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=121.972(sys=121.972, diff=0.000), sm=absolute bw=256kbps(v=51:10981081:10981081, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:38 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/720p) play=00:00:14.976/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:38 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=121.972(sys=121.972, diff=0.000), sm=absolute bw=193kbps(v=56:10981081:10981081, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:38 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/480p) play=00:00:14.976/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:38 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=121.972(sys=121.972, diff=0.000), sm=absolute bw=171kbps(v=75:10981081:10981081, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:38 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/360p) play=00:00:15.168/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:38 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=121.972(sys=121.972, diff=0.000), sm=absolute bw=118kbps(v=54:10981081:10981081, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:38 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_5-cocos_program_B120111027_D1_1319746/240p) play=00:00:15.168/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[- [pastor] The Devil is close by,
+- [director groans]]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[- [pastor] The Devil is close by,
+- [director groans]]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[- [pastor] The Devil is close by,
+- [director groans]]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[- [pastor] The Devil is close by,
+- [director groans]]
+2022-12-01 11:07:39 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[- [pastor] The Devil is close by,
+- [director groans]]
+2022-12-01 11:07:40 trace media/stream.cpp 3284 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_5) stop 1.902 sec earlier for "by_gop" option (SCH_TRACE)
+2022-12-01 11:07:40 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_2_5) error(8)
+2022-12-01 11:07:41 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/360p)
+2022-12-01 11:07:41 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_5) stopped
+2022-12-01 11:07:41 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_6->cocos_program_B120111027_D1_1319746/360p) started
+2022-12-01 11:07:41 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_2_6) started (SCH_TRACE)
+2022-12-01 11:07:41 trace media/stream.cpp 3284 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_5) stop 1.902 sec earlier for "by_gop" option (SCH_TRACE)
+2022-12-01 11:07:41 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_2_5) error(8)
+2022-12-01 11:07:42 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/240p)
+2022-12-01 11:07:42 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_5) stopped
+2022-12-01 11:07:42 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_6->cocos_program_B120111027_D1_1319746/240p) started
+2022-12-01 11:07:42 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_2_6) started (SCH_TRACE)
+2022-12-01 11:07:42 trace media/stream.cpp 3284 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_5) stop 1.902 sec earlier for "by_gop" option (SCH_TRACE)
+2022-12-01 11:07:42 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_2_5) error(8)
+2022-12-01 11:07:42 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/1080p)
+2022-12-01 11:07:42 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_5) stopped
+2022-12-01 11:07:42 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_6->cocos_program_B120111027_D1_1319746/1080p) started
+2022-12-01 11:07:42 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_2_6) started (SCH_TRACE)
+2022-12-01 11:07:42 trace media/stream.cpp 3284 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_5) stop 1.902 sec earlier for "by_gop" option (SCH_TRACE)
+2022-12-01 11:07:42 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_2_5) error(8)
+2022-12-01 11:07:43 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/720p)
+2022-12-01 11:07:43 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_5) stopped
+2022-12-01 11:07:43 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_6->cocos_program_B120111027_D1_1319746/720p) started
+2022-12-01 11:07:43 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_2_6) started (SCH_TRACE)
+2022-12-01 11:07:43 trace media/stream.cpp 3284 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_5) stop 1.902 sec earlier for "by_gop" option (SCH_TRACE)
+2022-12-01 11:07:43 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_2_5) error(8)
+2022-12-01 11:07:43 info media/stream.cpp 2841 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): original source replaced with stream(id=cocos_program_B120111027_D1_1319746/480p)
+2022-12-01 11:07:43 info media/stream.cpp 3722 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_5) stopped
+2022-12-01 11:07:43 info media/stream.cpp 3708 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_6->cocos_program_B120111027_D1_1319746/480p) started
+2022-12-01 11:07:43 trace media/stream.cpp 3619 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_2_6) started (SCH_TRACE)
+2022-12-01 11:07:43 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[always out to get you.]
+2022-12-01 11:07:43 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[always out to get you.]
+2022-12-01 11:07:43 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[always out to get you.]
+2022-12-01 11:07:43 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[always out to get you.]
+2022-12-01 11:07:43 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[always out to get you.]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[[pastor] The Day of Judgment is near.]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[[pastor] The Day of Judgment is near.]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[[pastor] The Day of Judgment is near.]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[[pastor] The Day of Judgment is near.]
+2022-12-01 11:07:44 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[[pastor] The Day of Judgment is near.]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[This is insane.]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[This is insane.]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[This is insane.]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[This is insane.]
+2022-12-01 11:07:46 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[This is insane.]
+2022-12-01 11:07:47 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:47 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:48 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:48 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:48 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:48 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:49 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[I run this place on small subsidies
+and offerings from our sisters.]
+2022-12-01 11:07:49 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=132.970(sys=132.970, diff=0.000), sm=absolute bw=328kbps(v=55:11970828:11970828, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:49 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=00:00:06.069/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:49 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[I run this place on small subsidies
+and offerings from our sisters.]
+2022-12-01 11:07:49 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=132.970(sys=132.970, diff=0.000), sm=absolute bw=256kbps(v=51:11970828:11970828, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:49 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=00:00:06.069/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:49 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[I run this place on small subsidies
+and offerings from our sisters.]
+2022-12-01 11:07:49 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=132.970(sys=132.970, diff=0.000), sm=absolute bw=193kbps(v=56:11970828:11970828, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:49 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=00:00:06.069/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:49 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[I run this place on small subsidies
+and offerings from our sisters.]
+2022-12-01 11:07:49 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=132.970(sys=132.970, diff=0.000), sm=absolute bw=171kbps(v=75:11970828:11970828, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:49 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=00:00:06.176/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:49 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[I run this place on small subsidies
+and offerings from our sisters.]
+2022-12-01 11:07:49 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=132.970(sys=132.970, diff=0.000), sm=absolute bw=118kbps(v=54:11970828:11970828, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:07:49 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=00:00:06.176/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[But since he came here,
+the well's run dry.]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[But since he came here,
+the well's run dry.]
+2022-12-01 11:07:57 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:07:57 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[But since he came here,
+the well's run dry.]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[But since he came here,
+the well's run dry.]
+2022-12-01 11:07:57 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[But since he came here,
+the well's run dry.]
+2022-12-01 11:08:00 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=143.974(sys=143.974, diff=0.000), sm=absolute bw=328kbps(v=55:12961262:12961262, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:00 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=00:00:17.013/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:00 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=143.974(sys=143.974, diff=0.000), sm=absolute bw=256kbps(v=51:12961262:12961262, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:00 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=00:00:17.013/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:00 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=143.974(sys=143.974, diff=0.000), sm=absolute bw=193kbps(v=56:12961262:12961262, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:00 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=00:00:17.013/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:00 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=143.974(sys=143.974, diff=0.000), sm=absolute bw=171kbps(v=75:12961262:12961262, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:00 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=00:00:17.184/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:00 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=143.974(sys=143.974, diff=0.000), sm=absolute bw=118kbps(v=54:12961262:12961262, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:00 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=00:00:17.184/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:01 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:08:01 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:08:01 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:08:01 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:08:01 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): subtitle flush out [english:eng]=[ERASE]
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_ad_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): schedule(schid_3_6) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_ad_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): schedule(schid_3_6) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_ad_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): schedule(schid_3_6) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_ad_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): schedule(schid_3_6) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_3_1) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_3_2) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_3_3) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_3_4) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_ad_3_5) error(8)
+2022-12-01 11:08:02 error media/stream.cpp 3634 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): schedule(schid_3_6) error(8)
+2022-12-01 11:08:07 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:07 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:08:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): subtitle flush out [english:eng]=[Whether it's a knife or a gun,
+whoever raises it first dies first.]
+2022-12-01 11:08:07 trace media/mux/sts.cpp 384 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): subtitle flush out [english:eng]=[Whether it's a knife or a gun,
+whoever raises it first dies first.]
+2022-12-01 11:08:11 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=154.961(sys=154.961, diff=-0.000), sm=absolute bw=328kbps(v=55:13950088:13950088, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:11 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:11 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=154.961(sys=154.961, diff=-0.000), sm=absolute bw=256kbps(v=51:13950088:13950088, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:11 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:11 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=154.961(sys=154.961, diff=-0.000), sm=absolute bw=193kbps(v=56:13950088:13950088, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:11 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:11 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=154.961(sys=154.961, diff=-0.000), sm=absolute bw=171kbps(v=75:13950088:13950088, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:11 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:11 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=154.961(sys=154.961, diff=-0.000), sm=absolute bw=118kbps(v=54:13950088:13950088, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:11 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:17 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:17 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:08:22 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=166.019(sys=166.019, diff=0.000), sm=absolute bw=328kbps(v=55:14945275:14945275, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:22 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:22 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=166.019(sys=166.019, diff=0.000), sm=absolute bw=256kbps(v=51:14945275:14945275, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:22 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:22 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=166.019(sys=166.019, diff=0.000), sm=absolute bw=193kbps(v=56:14945275:14945275, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:22 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:22 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=166.019(sys=166.019, diff=0.000), sm=absolute bw=171kbps(v=75:14945275:14945275, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:22 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:22 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=166.019(sys=166.019, diff=0.000), sm=absolute bw=118kbps(v=54:14945275:14945275, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:22 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:27 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:27 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:08:33 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=177.020(sys=177.020, diff=0.000), sm=absolute bw=328kbps(v=55:15935408:15935408, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:33 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:33 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=177.020(sys=177.020, diff=0.000), sm=absolute bw=256kbps(v=51:15935408:15935408, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:33 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:33 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=177.020(sys=177.020, diff=0.000), sm=absolute bw=193kbps(v=56:15935408:15935408, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:33 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:33 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=177.020(sys=177.020, diff=0.000), sm=absolute bw=171kbps(v=75:15935408:15935408, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:33 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:33 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=177.020(sys=177.020, diff=0.000), sm=absolute bw=118kbps(v=54:15935408:15935408, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:33 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:37 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:37 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:08:44 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=187.991(sys=187.991, diff=-0.000), sm=absolute bw=328kbps(v=55:16922743:16922743, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:44 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:44 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=187.991(sys=187.991, diff=-0.000), sm=absolute bw=256kbps(v=51:16922743:16922743, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:44 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:44 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=187.991(sys=187.991, diff=-0.000), sm=absolute bw=193kbps(v=56:16922743:16922743, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:44 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:44 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=187.991(sys=187.991, diff=-0.000), sm=absolute bw=171kbps(v=75:16922743:16922743, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:44 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:44 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=187.991(sys=187.991, diff=-0.000), sm=absolute bw=118kbps(v=54:16922743:16922743, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:44 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:47 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:47 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:08:55 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=198.964(sys=198.964, diff=0.000), sm=absolute bw=328kbps(v=55:17910288:17910288, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:55 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:55 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=198.964(sys=198.964, diff=0.000), sm=absolute bw=256kbps(v=51:17910288:17910288, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:55 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:55 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=198.964(sys=198.964, diff=0.000), sm=absolute bw=193kbps(v=56:17910288:17910288, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:55 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:55 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=198.964(sys=198.964, diff=0.000), sm=absolute bw=171kbps(v=75:17910288:17910288, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:55 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:55 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=198.964(sys=198.964, diff=0.000), sm=absolute bw=118kbps(v=54:17910288:17910288, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:08:55 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:08:57 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:08:57 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
+2022-12-01 11:09:06 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): lap=209.965(sys=209.965, diff=-0.000), sm=absolute bw=328kbps(v=55:18900393:18900393, a=273:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:09:06 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/1080p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/1080p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:09:06 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): lap=209.965(sys=209.965, diff=-0.000), sm=absolute bw=256kbps(v=51:18900393:18900393, a=204:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:09:06 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/720p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/720p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:09:06 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): lap=209.965(sys=209.965, diff=-0.000), sm=absolute bw=193kbps(v=56:18900393:18900393, a=136:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:09:06 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/480p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/480p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:09:06 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): lap=209.965(sys=209.965, diff=-0.000), sm=absolute bw=171kbps(v=75:18900393:18900393, a=96:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:09:06 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/360p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/360p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:09:06 trace media/stream.cpp 2113 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): lap=209.965(sys=209.965, diff=-0.000), sm=absolute bw=118kbps(v=54:18900393:18900393, a=64:-1), fps=29.97, schbuf=0/0
+2022-12-01 11:09:06 trace media/stream.cpp 2127 stream(id=2c56c2b9_aa3a_409e_a99b_37b01a746233/240p): current schedule (main:schid_2_6-cocos_program_B120111027_D1_1319746/240p) play=02:40:11.711/00:00:20.000, adlap=00:00:00.000/00:00:00.000
+2022-12-01 11:09:07 info svr/svr.cpp 904 server: status session(rtmp:0, http:0, https:0, stcp:0), downloader(0/0/4, queue=0), bev=0
+2022-12-01 11:09:07 trace svr/svr.cpp 926 server: thread weight=[0|0|0|0]
