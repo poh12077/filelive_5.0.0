@@ -30,9 +30,12 @@ problem
 	서비스에 영향 있는지 확인
 	id 비교 알고리즘 구현
 	버그 : pluto 엑셀 파싱할때 첫번쨰 영상이 리더필름이 아니면 에러 발생
+	엑셀에서 광고_id 못읽는 버그 
 	파일 모두 읽지 말고 한줄씩 읽기
+	오차 시간 계산 검증
 	
 	
 memo
 	solrtmp hls 재생 url : http://서버주소IP/채널ID/hls/playlist.m3u8
-	
+							
+http://192.168.130.168/2c56c2b9_aa3a_409e_a99b_37b01a746233/hls/playlist.m3u8

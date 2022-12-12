@@ -1504,7 +1504,6 @@ let post = (detection_ouput, conf) => {
     let vol = detection_ouput.channelID;
     let resolution = detection_ouput.resolution;
     let status = detection_ouput.result;
-    let errorTime = detection_ouput.errorTime;
     let host_name = conf.host_name;
     let excel_current_content_id = detection_ouput.excel_current_content_id;
     let solrtmp_current_content_id = detection_ouput.solrtmp_current_content_id;
@@ -1518,7 +1517,6 @@ let post = (detection_ouput, conf) => {
         vol: vol,
         server_type : server_type,
         status: status,
-        errorTime: errorTime,
         host_name: host_name,
         stream_name: resolution,
         type : type
@@ -1529,15 +1527,21 @@ let post = (detection_ouput, conf) => {
             'Content-Type': 'application/json'
         }
     }
-    let debugLog = new Date().toLocaleString()+' '+telco+' '+service+' '+' '+server_type+' '+host_name+' '+vol+' '+resolution+' '+errorTime+' '+status+' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n';
+    let today = new Date();   
+    let year = today.getFullYear().toString(); 
+    let month = (today.getMonth() + 1).toString();  
+    let date = today.getDate().toString();
+
+    let debugLogName = year+month+date+'_monitoring.log'; 
+    let debugLog = new Date().toLocaleString()+' '+telco+' '+service+' '+' '+server_type+' '+host_name+' '+vol+' '+resolution+' '+status+' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n';
     axios.post(url, messageBody, headers)
         .then(function (response) {
-            fs.appendFileSync('debug.log', debugLog );
-            console.log(response);
+            fs.appendFileSync(debugLogName, debugLog );
+            //console.log(response);
         })
         .catch(function (error) {
-            fs.appendFileSync('debug.log', "reatAPI fail\n" );
-            console.log(error);
+            fs.appendFileSync(debugLogName, "reatAPI fail\n" );
+            //console.log(error);
         })
         .finally(function () {
             // always executed
