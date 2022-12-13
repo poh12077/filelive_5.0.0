@@ -14,16 +14,11 @@ class video_info {
 
 //time ='2012-05-17 10:20:30'
 let convertKST2UnixTimestamp = (time) => {
-    try {
         return Math.floor(new Date(time).getTime());
-    } catch (err) {
-        console.log(err);
-        process.exit(1);
-    }
+   
 }
 
 let time_converter = (x) => {
-    try {
         if (typeof (x) === 'string') {
             if (isNaN(Number(x))) {
                 const y = x.split(':');
@@ -43,12 +38,7 @@ let time_converter = (x) => {
         else {
             throw new Error();
         }
-    }
-    catch (err) {
-        console.log('[error] time parse');
-        console.log(err);
-        process.exit(1);
-    }
+  
 }
 
 let read_conf_samsung = (file_name) => {
@@ -119,50 +109,14 @@ let read_conf_samsung = (file_name) => {
     } catch (err) {
         console.log('[error] configure.conf ');
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
 
 let readConfig = (file_name) => {
-    try {
         let conf = fs.readFileSync(file_name, 'utf8');
         conf = JSON.parse(conf);
-
-        // let conf = {
-        //     excel: '',
-        //     log: '',
-        //     option: 0,
-        //     start_date_pluto: '',
-        //     current_time: '',
-        //     error_tolerance: 0,
-        //     period: 0,
-        //     test: 0,
-
-        //     ad_duration: {
-        //         pluto: '',
-        //     },
-        //     ad_name: {
-        //         pluto: '',
-        //     },
-        //     id_prefix: {
-        //         content: '',
-        //         ad: ''
-        //     }
-        // }
-
-        // conf.excel = conf_file.excel;
-        // conf.log = conf_file.log;
-        // conf.option = conf_file.option;
-        // conf.start_date_pluto = conf_file.start_date_pluto;
-        // conf.current_time = conf_file.current_time;
-        // conf.error_tolerance = conf_file.error_tolerance;
-        // conf.period = conf_file.period;
-        // conf.test = conf_file.test;
-        // conf.id_prefix.content = conf_file.id_prefix.content;
-        // conf.id_prefix.ad = conf_file.id_prefix.ad;
-
-        // conf.current_time = convertKST2UnixTimestamp(conf_file.current_time);
 
         for (let sheet in conf.start_date_pluto) {
             conf.start_date_pluto[sheet] = convertKST2UnixTimestamp(conf.start_date_pluto[sheet]);
@@ -171,18 +125,11 @@ let readConfig = (file_name) => {
             conf.start_date_samsung[sheet] = convertKST2UnixTimestamp(conf.start_date_samsung[sheet]);
         }
 
-
         if (conf.option < 1 || conf.option > 4 || conf.ad_duration.pluto <= 0
             || conf.ad_name.pluto.length <= 0 || !Number.isInteger(conf.error_tolerance)) {
             throw new Error();
         }
-
         return conf;
-    } catch (err) {
-        console.log('[error] configure.conf ');
-        console.log(err);
-        process.exit(1);
-    }
 }
 
 
@@ -202,7 +149,7 @@ let read_excel = (excel, conf, i) => {
     } catch (err) {
         console.log('[error] excel');
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -286,13 +233,12 @@ let parser_excel = (json, conf, sheet, excel) => {
         return schedule;
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
 
 let parser_excel_for_timetable = (json, conf, sheet, excel) => {
-    try {
         let schedule = [];
         let schedule_date = [];
 
@@ -402,11 +348,6 @@ let parser_excel_for_timetable = (json, conf, sheet, excel) => {
         }
         // return schedule_date;
         return schedule;
-
-    } catch (err) {
-        console.log(err);
-        process.exit(1);
-    }
 }
 
 
@@ -620,7 +561,7 @@ let id_finder_excel = (schedule, conf, channel, running_video, current_time, exc
         }
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -688,8 +629,8 @@ let parseLog = (conf) => {
                 }
             }
         } catch (error) {
-           // fs.appendFileSync('debug.log', error.toString()+"\n");
-        }
+            // fs.appendFileSync('debug.log', error.toString()+"\n");
+         }
     }
     return log;
 }
@@ -789,7 +730,7 @@ let id_finder_solrtmp_log_from_end = (log, conf, running_video, current_time) =>
         }
     } catch (error) {
         console.log(error);
-        process.exit(1);
+        
     }
 }
 
@@ -836,7 +777,7 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
                         delete running_video.excel.samsung[channel];
                         running_video.terminated_channel.push(channel);
                         if (Object.keys(running_video.excel.samsung).length == 0) {
-                            process.exit(1);
+                            
                         }
                     }
                 } else if (conf.option == 3) {
@@ -844,7 +785,7 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
                         //console.log(channel, log[channel][log[channel].length - 1].video_id, " done");
                         noc_log = new Date() + ' ' + channel + ' ' + log[channel][log[channel].length - 1].video_id + ' ' + "success";
                         fs.appendFileSync('NOC.log', noc_log + '\n');
-                        process.exit(1);
+                        
                     }
 
                 }
@@ -853,7 +794,7 @@ let id_finder_solrtmp_log_from_start = (log, conf, running_video, current_time) 
         }
     } catch (error) {
         console.log(error);
-        process.exit(1);
+        
     }
 }
 
@@ -872,7 +813,7 @@ let samsung_smartTV = (json) => {
     } catch (err) {
         console.log('[error] samsungTV name parse');
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -887,7 +828,6 @@ function preferredOrder(obj, order) {
 }
 
 let update_schedule = (schedule, conf) => {
-    try {
         let start_date;
         let file_name;
 
@@ -922,14 +862,10 @@ let update_schedule = (schedule, conf) => {
             let file_json = JSON.stringify(schedule[sheet], null, "\t");
             fs.writeFileSync("./timetable/" + file_name, file_json);
         }
-    } catch (err) {
-        console.log(err);
-        process.exit(1);
-    }
+  
 }
 
 let module_excel = (conf, schedule) => {
-    try {
         //read whole excel
         let excel = xlsx.readFile(conf.excel);
         let json;
@@ -943,10 +879,6 @@ let module_excel = (conf, schedule) => {
             schedule.push(parser_excel_for_timetable(json, conf, sheet, excel));
         }
         update_schedule(schedule, conf);
-    } catch (err) {
-        console.log(err);
-        process.exit(1);
-    }
 }
 
 let solrtmp_log_write = (log, file_name) => {
@@ -975,7 +907,7 @@ let id_cut = (id, length) => {
         }
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -993,7 +925,7 @@ let id_synchronizer = (id, conf) => {
         }
     } catch (error) {
         console.log(error);
-        process.exit(1);
+        
     }
 }
 
@@ -1087,7 +1019,7 @@ let monitorPluto = (conf) => {
 
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -1101,7 +1033,7 @@ let monitorSamsungKorea = (conf) => {
 
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -1166,7 +1098,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
                         delete running_video.excel.samsung[channel];
                         running_video.terminated_channel.push(channel);
                         if (Object.keys(running_video.excel.samsung).length == 0) {
-                            process.exit(1);
+                            
                         }
                     } else {
                         debug_log.excel = running_video.excel.time.toLocaleString() + ' [excel]       ' + channel + ' ' + running_video.excel.samsung[channel] + ' ' + 'play=' + convert_unixTime_to_date(running_video.excel.play_time_samsung[channel].current) + '/' + convert_unixTime_to_date(running_video.excel.play_time_samsung[channel].total);
@@ -1178,7 +1110,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
                         delete running_video.excel.samsung[channel];
                         running_video.terminated_channel.push(channel);
                         if (Object.keys(running_video.excel.samsung).length == 0) {
-                            process.exit(1);
+                            
                         }
                     }
                 } else {
@@ -1217,14 +1149,14 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
                         noc_log = new Date().toLocaleString() + ' ' + solrtmp_log_channel + ' success\n';
                         fs.appendFileSync('debug.log', debug_log.excel + '\n' + debug_log.solrtmp_log + ' success\n\n');
                         fs.appendFileSync('NOC.log', noc_log);
-                        process.exit(1);
+                        
                     } else {
                         debug_log.excel = new Date().toLocaleString() + ' ' + running_video.excel.time.toLocaleString() + ' [excel]       ' + solrtmp_log_channel + ' ' + running_video.excel.pluto[channel] + ' ' + 'play=' + convert_unixTime_to_date(running_video.excel.play_time.current) + '/' + convert_unixTime_to_date(running_video.excel.play_time.total);
                         debug_log.solrtmp_log = new Date().toLocaleString() + ' ' + running_video.solrtmp_log.time.toLocaleString() + ' [solRTMP_log] ' + solrtmp_log_channel + ' ' + running_video.solrtmp_log.pluto[solrtmp_log_channel] + ' ' + running_video.solrtmp_log.play_time[solrtmp_log_channel];
                         noc_log = new Date().toLocaleString() + ' ' + solrtmp_log_channel + ' fail\n'
                         fs.appendFileSync('debug.log', debug_log.excel + '\n' + debug_log.solrtmp_log + ' fail\n\n');
                         fs.appendFileSync('NOC.log', noc_log);
-                        process.exit(1);
+                        
                     }
                 } else {
                     debug_log.excel = new Date().toLocaleString() + ' ' + running_video.excel.time.toLocaleString() + ' [excel]       ' + solrtmp_log_channel + ' ' + running_video.excel.pluto[channel] + ' ' + 'play=' + convert_unixTime_to_date(running_video.excel.play_time.current) + '/' + convert_unixTime_to_date(running_video.excel.play_time.total);
@@ -1242,7 +1174,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
         }
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -1314,14 +1246,14 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
 //                         fs.appendFileSync('NOC.log', noc_log + '\n');
 //                         fs.appendFileSync('debug.log', noc_log + '\n');
 //                         err_count[channel] = 0;
-//                         //process.exit(1);
+//                         //
 //                     }
 //                 }
 //             }
 //         }
 //     } catch (err) {
 //         console.log(err);
-//         process.exit(1);
+//         
 //     }
 // }
 
@@ -1337,7 +1269,7 @@ let streaming_detect = (running_video, conf, solrtmp_log_channel, err_count) => 
 //         }
 //     } catch (err) {
 //         console.log(err);
-//         process.exit(1);
+//         
 //     }
 // }
 
@@ -1346,7 +1278,7 @@ let channel_match = (schedule, log, conf) => {
         mapping_table = channel_map(schedule, log, conf);
     } catch (err) {
         console.log(err);
-        process.exit(1);
+        
     }
 }
 
@@ -1365,7 +1297,6 @@ let initialize_err_count = (log, schedule, conf, err_count) => {
 }
 
 let detectPluto = (log, schedule, conf) => {
-    try {
         for (let channel in log) {
             let detection_ouput = {
                 service: conf.service,
@@ -1405,13 +1336,10 @@ let detectPluto = (log, schedule, conf) => {
             //return detection_ouput;
             determineResult(detection_ouput, conf);
         }
-    } catch (error) {
-        console.log(error);
-    }
+   
 }
 
 let detectSamsung = (log, schedule, conf) => {
-    try {
         let mapping_table = channel_map(schedule, log, conf);
 
         for (let property in mapping_table) {
@@ -1454,9 +1382,6 @@ let detectSamsung = (log, schedule, conf) => {
             //return detection_ouput;
             determineResult(detection_ouput, conf);
         }
-    } catch (error) {
-        console.log(error);
-    }
 }
 
 
@@ -1532,15 +1457,14 @@ let post = (detection_ouput, conf) => {
     let month = (today.getMonth() + 1).toString();  
     let date = today.getDate().toString();
 
-    let debugLogName = year+month+date+'_monitoring.log'; 
-    let debugLog = new Date().toLocaleString()+' '+telco+' '+service+' '+' '+server_type+' '+host_name+' '+vol+' '+resolution+' '+status+' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n';
+    let monitoringLogName = year+month+date+'_monitoring.log'; 
+    let monitoringLog = new Date().toLocaleString()+' '+telco+' '+service+' '+' '+server_type+' '+host_name+' '+vol+' '+resolution+' '+status+' '+excel_current_content_id+' '+solrtmp_current_content_id+'\n';
     axios.post(url, messageBody, headers)
         .then(function (response) {
-            fs.appendFileSync(debugLogName, debugLog );
+            fs.appendFileSync(monitoringLogName, monitoringLog );
             //console.log(response);
         })
         .catch(function (error) {
-            fs.appendFileSync(debugLogName, "reatAPI fail\n" );
             //console.log(error);
         })
         .finally(function () {
@@ -1591,8 +1515,12 @@ let main = () => {
         }
 
     } catch (error) {
-        console.log(error);
-        process.exit(1);
+        let today = new Date();   
+        let year = today.getFullYear().toString(); 
+        let month = (today.getMonth() + 1).toString();  
+        let date = today.getDate().toString();
+        let errorLogName = year+month+date+'_error.log'; 
+        fs.appendFileSync(errorLogName, error.toString() );
     }
 }
 
