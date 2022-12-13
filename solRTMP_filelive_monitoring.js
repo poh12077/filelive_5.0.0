@@ -1320,7 +1320,12 @@ let detectPluto = (log, schedule, conf) => {
             let log_start_time = log[channel][lineNumber].time;
             detection_ouput.channelID = channel;
             detection_ouput.resolution = log[channel][lineNumber].resolution;
-
+            
+            if(!resolutionSet.includes(detection_ouput.resolution))
+            {
+                continue;
+            }
+            
             let sheet = 0;
             for (let content = 0; content < schedule[sheet].length; content++) {
                 let excel_content_seq = schedule[sheet][content].seq;
