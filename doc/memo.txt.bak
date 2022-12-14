@@ -27,6 +27,7 @@ problem
 	
 	북미 엑셀 읽기
 	삼성 채널별 처리
+	detectPluto 와 detectsamsung 을 하나의 함수로 합쳐보기
 	
 	파일 모두 읽지 말고 한줄씩 읽기
 	

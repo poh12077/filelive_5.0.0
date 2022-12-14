@@ -598,19 +598,20 @@ let parseLog = (conf) => {
                 if (full_log[i].indexOf('(id=') == -1) {
                     throw new Error("log parse");
                 }
-                let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
+                let channelIdAndResolution= full_log[i].substring( full_log[i].indexOf('(id='), full_log[i].indexOf('p):') ).split('/');
+                if (channelIdAndResolution[0] === undefined || channelIdAndResolution[1]===undefined ) {
+                    throw new Error("log parse");
+                }
+                let channel_id =  channelIdAndResolution[0].substr(4);
                 if (!(channel_list.includes(channel_id))) {
                     channel_list.push(channel_id);
                     log[channel_id] = [];
                 }
+                let resolution = channelIdAndResolution[1]+'p';
                 if (full_log[i].indexOf('schid') == -1 || full_log[i].indexOf(') started') == -1) {
                     throw new Error("log parse");
                 }
                 let seq_and_id_and_resolution = full_log[i].slice(full_log[i].indexOf('schid'), full_log[i].indexOf(') started')).split('/');
-                if (seq_and_id_and_resolution[1] === undefined) {
-                    throw new Error("log parse");
-                }
-                let resolution = seq_and_id_and_resolution[1];
                 let seq_and_id = seq_and_id_and_resolution[0];
                 seq_and_id = seq_and_id.split('_');
                 if (seq_and_id[4] === undefined || seq_and_id[5] === undefined || seq_and_id[6] === undefined) {
@@ -635,7 +636,6 @@ let parseLog = (conf) => {
     if (Object.keys(log).length == 0) {
         throw new Error("log is too short");
     }
-
     return log;
 }
 
