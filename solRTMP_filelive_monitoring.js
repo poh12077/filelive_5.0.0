@@ -639,55 +639,6 @@ let parseLog = (conf) => {
     return log;
 }
 
-let parseSamsungLog = (conf) => {
-    let file = fs.readFileSync(conf.log, 'utf8');
-    let full_log = [];
-    full_log = file.split('\n');
-    let log = {}
-
-    class line {
-        constructor(time, video_id, content_seq, ad_seq, resolution) {
-            this.time = time;
-            this.video_id = video_id;
-            this.content_seq = content_seq;
-            this.ad_seq = ad_seq;
-            this.resolution = resolution;
-        }
-    }
-
-    let channel_list = [];
-
-    for (let i = 0; i < full_log.length; i++) {
-        let index = full_log[i].indexOf('started');
-        if (index != -1) {
-            let time = full_log[i].substr(0, 19);
-            time = convertKST2UnixTimestamp(time);
-            let channel_id = full_log[i].substr(full_log[i].indexOf('(id=')).split('/')[0].substr(4);
-            if (!(channel_list.includes(channel_id))) {
-                channel_list.push(channel_id);
-                log[channel_id] = [];
-            }
-            let seq_and_id_and_resolution = full_log[i].slice(full_log[i].indexOf('schid'), full_log[i].indexOf(') started')).split('/');
-            let resolution = seq_and_id_and_resolution[1];
-            let seq_and_id = seq_and_id_and_resolution[0];
-            seq_and_id = seq_and_id.split('_');
-
-            if (seq_and_id[1] == 'ad') {
-                let content_seq = seq_and_id[2];
-                let ad_seq = seq_and_id[3].charAt(0);
-                let video_id = seq_and_id[1];
-                log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
-            } else {
-                let content_seq = seq_and_id[1];
-                let ad_seq = seq_and_id[2].charAt(0);
-                let video_id = seq_and_id[4] + "_" + seq_and_id[5];
-                log[channel_id].push(new line(time, video_id, content_seq, ad_seq, resolution));
-            }
-        }
-    }
-    return log;
-}
-
 
 
 let id_finder_solrtmp_log_from_end = (log, conf, running_video, current_time) => {
@@ -1300,7 +1251,7 @@ let initialize_err_count = (log, schedule, conf, err_count) => {
     }
 }
 
-let detectPluto = (log, schedule, conf) => {
+let detect = (log, schedule, conf) => {
     let mapping_table = channel_map(schedule, log);
 
     for (let channel in mapping_table) {
@@ -1347,7 +1298,6 @@ let detectPluto = (log, schedule, conf) => {
                     break;
                 }
             }
-            //return detection_ouput;
             determineResult(detection_ouput, conf);
 
             resolutionSet = resolutionSet.filter((element) => element !== detection_ouput.resolution)
@@ -1356,51 +1306,6 @@ let detectPluto = (log, schedule, conf) => {
             }
         }
 
-    }
-}
-
-let detectSamsung = (log, schedule, conf) => {
-    let mapping_table = channel_map(schedule, log, conf);
-
-    for (let property in mapping_table) {
-        let channel = mapping_table[property];
-        let detection_ouput = {
-            service: conf.service,
-            channelID: "",
-            resolution: "1080p",
-            result: "",
-            errorTime: "",
-            solrtmp_current_content_id: "",
-            excel_current_content_id: ""
-        }
-        let log_content_seq = log[channel][log[channel].length - 1].content_seq;
-        let log_ad_seq = log[channel][log[channel].length - 1].ad_seq;
-        let log_video_id = log[channel][log[channel].length - 1].video_id;
-        detection_ouput.solrtmp_current_content_id = log_video_id;
-        let log_start_time = log[channel][log[channel].length - 1].time;
-        detection_ouput.channelID = channel;
-
-        let sheet = parseInt(property);
-        for (let content = 0; content < schedule[sheet].length; content++) {
-            let excel_content_seq = schedule[sheet][content].seq;
-            if (excel_content_seq == log_content_seq) {
-                let excel_start_time;
-                if (log_video_id == 'ad') {
-                    excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 1].start;
-                } else {
-                    if (log_ad_seq == 1) {
-                        excel_start_time = schedule[sheet][content].start_time;
-                    } else {
-                        excel_start_time = schedule[sheet][content].ad_point[log_ad_seq - 2].end;
-                    }
-                }
-                detection_ouput.errorTime = excel_start_time - log_start_time;
-                detection_ouput.excel_current_content_id = schedule[sheet][content].id;
-                break;
-            }
-        }
-        //return detection_ouput;
-        determineResult(detection_ouput, conf);
     }
 }
 
@@ -1512,19 +1417,7 @@ let determineResult = (detection_ouput, conf) => {
 let monitor = (conf, schedule) => {
     try {
         let solrtmp_log = parseLog(conf);
-
-        // if (conf.option == 1 || conf.option == 2) {
-        //     solrtmp_log = parseSamsungLog(conf);
-        // } else {
-        //     solrtmp_log = parseLog(conf);
-        // }
-        detectPluto(solrtmp_log, schedule, conf);
-
-        // if (conf.option == 1 || conf.option == 2) {
-        //     detectSamsung(solrtmp_log, schedule, conf);
-        // } else {
-        //     detectPluto(solrtmp_log, schedule, conf);
-        // }
+        detect(solrtmp_log, schedule, conf);
 
     } catch (error) {
         let today = new Date();
