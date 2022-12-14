@@ -877,9 +877,9 @@ let module_excel = (conf, schedule) => {
     //read excel by sheet
     for (let sheet = 0; sheet < excel.SheetNames.length; sheet++) {
         json = read_excel(excel, conf, sheet);
-        if (conf.option == 1 || conf.option == 2) {
-            json = samsung_smartTV(json);
-        }
+        // if (conf.option == 1 || conf.option == 2) {
+        //     json = samsung_smartTV(json);
+        // }
         schedule.push(parser_excel_for_timetable(json, conf, sheet, excel));
     }
     update_schedule(schedule, conf);
@@ -933,7 +933,7 @@ let id_synchronizer = (id, conf) => {
     }
 }
 
-let channel_map = (schedule, log, conf) => {
+let channel_map = (schedule, log) => {
     let mapping_table = {};
     let break_loop = 0;
     let log_video_id = '';
@@ -947,7 +947,7 @@ let channel_map = (schedule, log, conf) => {
         for (let excel_sheet = 0; excel_sheet < schedule.length; excel_sheet++) {
             for (let line = 0; line < schedule[excel_sheet].length; line++) {
                 if (log_video_id == schedule[excel_sheet][line].id) {
-                    mapping_table[excel_sheet] = channel;
+                    mapping_table[channel] = excel_sheet;
                     break_loop = 1;
                     break;
                 }
@@ -1301,7 +1301,9 @@ let initialize_err_count = (log, schedule, conf, err_count) => {
 }
 
 let detectPluto = (log, schedule, conf) => {
-    for (let channel in log) {
+    let mapping_table = channel_map(schedule, log);
+
+    for (let channel in mapping_table) {
         let resolutionSet = conf.resolution;
         for (let lineNumber = log[channel].length - 1; lineNumber >= 0; lineNumber--) {
             let detection_ouput = {
@@ -1326,7 +1328,7 @@ let detectPluto = (log, schedule, conf) => {
                 continue;
             }
             
-            let sheet = 0;
+            let sheet = mapping_table[channel];
             for (let content = 0; content < schedule[sheet].length; content++) {
                 let excel_content_seq = schedule[sheet][content].seq;
                 if (excel_content_seq == log_content_seq) {
@@ -1509,18 +1511,20 @@ let determineResult = (detection_ouput, conf) => {
 
 let monitor = (conf, schedule) => {
     try {
-        let solrtmp_log;
-        if (conf.option == 1 || conf.option == 2) {
-            solrtmp_log = parseSamsungLog(conf);
-        } else {
-            solrtmp_log = parseLog(conf);
-        }
+        let solrtmp_log = parseLog(conf);
 
-        if (conf.option == 1 || conf.option == 2) {
-            detectSamsung(solrtmp_log, schedule, conf);
-        } else {
-            detectPluto(solrtmp_log, schedule, conf);
-        }
+        // if (conf.option == 1 || conf.option == 2) {
+        //     solrtmp_log = parseSamsungLog(conf);
+        // } else {
+        //     solrtmp_log = parseLog(conf);
+        // }
+        detectPluto(solrtmp_log, schedule, conf);
+
+        // if (conf.option == 1 || conf.option == 2) {
+        //     detectSamsung(solrtmp_log, schedule, conf);
+        // } else {
+        //     detectPluto(solrtmp_log, schedule, conf);
+        // }
 
     } catch (error) {
         let today = new Date();
